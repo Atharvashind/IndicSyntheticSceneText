@@ -1,0 +1,9 @@
+Pillow>=10.0.0
+opencv-python-headless>=4.9.0
+numpy>=1.26.0
+pandas>=2.2.0
+tqdm>=4.66.0
+fonttools>=4.53.0
+uharfbuzz>=0.30.0
+freetype-py>=2.4.0
+pytest>=8.0.0

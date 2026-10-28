@@ -1,0 +1,303 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "storefront-013528a5-0001-gujarati__D0_clean",
+  "image": "storefront-013528a5-0001-gujarati__D0_clean.png",
+  "image_width": 1500,
+  "image_height": 1100,
+  "language": "gujarati",
+  "script": "Gujarati",
+  "category": "shop_board",
+  "random_seed": 8168529402689069899,
+  "coordinate_convention": {
+    "origin": "top_left",
+    "x_direction": "right",
+    "y_direction": "down",
+    "coordinates": "pixel_edges; minimum edges inclusive and maximum edges exclusive"
+  },
+  "text_regions": [
+    {
+      "region_id": "shop_name",
+      "transcription": "અમોલ જ્વેલર્સ",
+      "language": "gujarati",
+      "script": "Gujarati",
+      "reading_order": 0,
+      "bbox": {
+        "x_min": 254,
+        "y_min": 187,
+        "x_max": 579,
+        "y_max": 242
+      },
+      "polygon": [
+        [
+          254,
+          187
+        ],
+        [
+          579,
+          187
+        ],
+        [
+          579,
+          242
+        ],
+        [
+          254,
+          242
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Gujarati",
+        "path": "assets/fonts/gujarati/NotoSansGujarati-Regular.ttf",
+        "style": "Regular",
+        "size_px": 60
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "left",
+        "foreground_rgb": [
+          25,
+          40,
+          68
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      },
+      "board_bbox": {
+        "x_min": 54,
+        "y_min": 123,
+        "x_max": 379,
+        "y_max": 178
+      },
+      "board_polygon": [
+        [
+          54,
+          123
+        ],
+        [
+          379,
+          123
+        ],
+        [
+          379,
+          178
+        ],
+        [
+          54,
+          178
+        ]
+      ],
+      "visibility": {
+        "estimated_fraction": 1.0,
+        "status": "visible",
+        "policy": "bbox_unoccluded_area_fraction",
+        "note": "Estimate uses axis-aligned text bbox area, not glyph-mask pixels."
+      }
+    },
+    {
+      "region_id": "service_list",
+      "transcription": "મોબાઇલ\nવેચાણ અને સમારકામ",
+      "language": "gujarati",
+      "script": "Gujarati",
+      "reading_order": 1,
+      "bbox": {
+        "x_min": 253,
+        "y_min": 394,
+        "x_max": 467,
+        "y_max": 466
+      },
+      "polygon": [
+        [
+          253,
+          394
+        ],
+        [
+          467,
+          394
+        ],
+        [
+          467,
+          466
+        ],
+        [
+          253,
+          466
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Gujarati",
+        "path": "assets/fonts/gujarati/NotoSansGujarati-Regular.ttf",
+        "style": "Regular",
+        "size_px": 28
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "left",
+        "foreground_rgb": [
+          25,
+          40,
+          68
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      },
+      "board_bbox": {
+        "x_min": 53,
+        "y_min": 330,
+        "x_max": 267,
+        "y_max": 402
+      },
+      "board_polygon": [
+        [
+          53,
+          330
+        ],
+        [
+          267,
+          330
+        ],
+        [
+          267,
+          402
+        ],
+        [
+          53,
+          402
+        ]
+      ],
+      "visibility": {
+        "estimated_fraction": 1.0,
+        "status": "visible",
+        "policy": "bbox_unoccluded_area_fraction",
+        "note": "Estimate uses axis-aligned text bbox area, not glyph-mask pixels."
+      }
+    }
+  ],
+  "generation_parameters": {
+    "template_id": "left_name_services",
+    "background_rgb": [
+      230,
+      238,
+      250
+    ],
+    "border_rgb": [
+      91,
+      48,
+      96
+    ],
+    "text_rgb": [
+      25,
+      40,
+      68
+    ],
+    "border_width_px": 8,
+    "outer_padding_px": 42,
+    "alignment": "left",
+    "logo": null,
+    "region_layout": [
+      {
+        "region_id": "shop_name",
+        "canvas_x": 42,
+        "canvas_y": 73,
+        "canvas_width": 1016,
+        "canvas_height": 179,
+        "font_size_px": 60,
+        "padding_px": 10,
+        "line_spacing": 1.12,
+        "content_type": "shop_name",
+        "hierarchy": "main",
+        "alignment": "left"
+      },
+      {
+        "region_id": "service_list",
+        "canvas_x": 42,
+        "canvas_y": 269,
+        "canvas_width": 1016,
+        "canvas_height": 202,
+        "font_size_px": 28,
+        "padding_px": 10,
+        "line_spacing": 1.12,
+        "content_type": "service_list",
+        "hierarchy": "secondary",
+        "alignment": "left"
+      }
+    ],
+    "board_position_in_scene": {
+      "x": 200,
+      "y": 64,
+      "width": 1100,
+      "height": 560
+    }
+  },
+  "validation": {
+    "status": "passed",
+    "warnings": [
+      "visual_review_required"
+    ],
+    "visual_review_required": true,
+    "errors": []
+  },
+  "board_layer": "../../../storefront_scenes_seed_20261029/storefront-013528a5-0001-gujarati_board.png",
+  "source_board_sample_id": "storefront-013528a5-0001-gujarati-board",
+  "scene_transform": {
+    "type": "translation_only",
+    "translate_x": 200,
+    "translate_y": 64,
+    "scale": 1.0,
+    "rotation_degrees": 0.0,
+    "perspective": false
+  },
+  "scene_parameters": {
+    "template_id": "procedural_storefront_v1",
+    "wall_rgb": [
+      215,
+      225,
+      217
+    ],
+    "trim_rgb": [
+      89,
+      61,
+      69
+    ],
+    "window_rgb": [
+      114,
+      147,
+      151
+    ],
+    "awning_rgb": [
+      49,
+      112,
+      96
+    ],
+    "awning_y": 666,
+    "random_seed": 4827737333266420553,
+    "visual_review_required": true
+  },
+  "source_random_seed": 5165956421212836435,
+  "parent": {
+    "sample_id": "storefront-013528a5-0001-gujarati",
+    "image": "../../../storefront_scenes_seed_20261029/storefront-013528a5-0001-gujarati.png",
+    "annotation": "../../../../annotations/storefront_scenes_seed_20261029/storefront-013528a5-0001-gujarati.json"
+  },
+  "scene_difficulty": {
+    "profile": "D0_clean",
+    "random_seed": 8168529402689069899,
+    "transformations": [
+      {
+        "type": "identity",
+        "seed": 8168529402689069899,
+        "geometry_changed": false
+      }
+    ],
+    "visibility_policy": "bbox_unoccluded_area_fraction",
+    "visibility_thresholds": {
+      "visible": 0.99,
+      "partial": 0.01
+    }
+  }
+}

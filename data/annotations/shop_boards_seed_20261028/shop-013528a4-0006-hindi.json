@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "shop-013528a4-0006-hindi",
+  "image": "shop-013528a4-0006-hindi.png",
+  "image_width": 1200,
+  "image_height": 600,
+  "language": "hindi",
+  "script": "Devanagari",
+  "category": "shop_board",
+  "random_seed": 14329310868616560200,
+  "coordinate_convention": {
+    "origin": "top_left",
+    "x_direction": "right",
+    "y_direction": "down",
+    "coordinates": "pixel_edges; minimum edges inclusive and maximum edges exclusive"
+  },
+  "text_regions": [
+    {
+      "region_id": "shop_name",
+      "transcription": "श्री लक्ष्मी फर्नीचर",
+      "language": "hindi",
+      "script": "Devanagari",
+      "reading_order": 0,
+      "bbox": {
+        "x_min": 893,
+        "y_min": 191,
+        "x_max": 1149,
+        "y_max": 233
+      },
+      "polygon": [
+        [
+          893,
+          191
+        ],
+        [
+          1149,
+          191
+        ],
+        [
+          1149,
+          233
+        ],
+        [
+          893,
+          233
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Devanagari",
+        "path": "assets/fonts/devanagari/NotoSansDevanagari-Regular.ttf",
+        "style": "Regular",
+        "size_px": 42
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "right",
+        "foreground_rgb": [
+          55,
+          30,
+          55
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "region_id": "storefront_description",
+      "transcription": "मोबाइल मरम्मत और सेवा",
+      "language": "hindi",
+      "script": "Devanagari",
+      "reading_order": 1,
+      "bbox": {
+        "x_min": 843,
+        "y_min": 416,
+        "x_max": 1151,
+        "y_max": 452
+      },
+      "polygon": [
+        [
+          843,
+          416
+        ],
+        [
+          1151,
+          416
+        ],
+        [
+          1151,
+          452
+        ],
+        [
+          843,
+          452
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Devanagari",
+        "path": "assets/fonts/devanagari/NotoSansDevanagari-Regular.ttf",
+        "style": "Regular",
+        "size_px": 34
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "right",
+        "foreground_rgb": [
+          55,
+          30,
+          55
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "generation_parameters": {
+    "template_id": "procedural_shop_board_v1",
+    "background_rgb": [
+      230,
+      238,
+      250
+    ],
+    "border_rgb": [
+      91,
+      48,
+      96
+    ],
+    "text_rgb": [
+      55,
+      30,
+      55
+    ],
+    "border_width_px": 6,
+    "outer_padding_px": 42,
+    "alignment": "right",
+    "region_layout": [
+      {
+        "region_id": "shop_name",
+        "canvas_x": 42,
+        "canvas_y": 102,
+        "canvas_width": 1116,
+        "canvas_height": 234,
+        "font_size_px": 42,
+        "padding_px": 10,
+        "line_spacing": 1.12
+      },
+      {
+        "region_id": "storefront_description",
+        "canvas_x": 42,
+        "canvas_y": 372,
+        "canvas_width": 1116,
+        "canvas_height": 132,
+        "font_size_px": 34,
+        "padding_px": 8,
+        "line_spacing": 1.12
+      }
+    ]
+  },
+  "validation": {
+    "status": "passed",
+    "warnings": [
+      "visual_review_required"
+    ],
+    "visual_review_required": true,
+    "errors": []
+  }
+}

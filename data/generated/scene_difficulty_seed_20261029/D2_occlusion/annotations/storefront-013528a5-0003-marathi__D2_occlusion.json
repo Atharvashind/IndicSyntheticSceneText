@@ -1,0 +1,336 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "storefront-013528a5-0003-marathi__D2_occlusion",
+  "image": "storefront-013528a5-0003-marathi__D2_occlusion.png",
+  "image_width": 1500,
+  "image_height": 1100,
+  "language": "marathi",
+  "script": "Devanagari",
+  "category": "shop_board",
+  "random_seed": 8205929284599074220,
+  "coordinate_convention": {
+    "origin": "top_left",
+    "x_direction": "right",
+    "y_direction": "down",
+    "coordinates": "pixel_edges; minimum edges inclusive and maximum edges exclusive"
+  },
+  "text_regions": [
+    {
+      "region_id": "shop_name",
+      "transcription": "श्री लक्ष्मी फर्निचर",
+      "language": "marathi",
+      "script": "Devanagari",
+      "reading_order": 0,
+      "bbox": {
+        "x_min": 455,
+        "y_min": 267,
+        "x_max": 749,
+        "y_max": 314
+      },
+      "polygon": [
+        [
+          455,
+          267
+        ],
+        [
+          749,
+          267
+        ],
+        [
+          749,
+          314
+        ],
+        [
+          455,
+          314
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Devanagari",
+        "path": "assets/fonts/devanagari/NotoSansDevanagari-Regular.ttf",
+        "style": "Regular",
+        "size_px": 48
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "left",
+        "foreground_rgb": [
+          25,
+          40,
+          68
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      },
+      "board_bbox": {
+        "x_min": 305,
+        "y_min": 203,
+        "x_max": 599,
+        "y_max": 250
+      },
+      "board_polygon": [
+        [
+          305,
+          203
+        ],
+        [
+          599,
+          203
+        ],
+        [
+          599,
+          250
+        ],
+        [
+          305,
+          250
+        ]
+      ],
+      "visibility": {
+        "estimated_fraction": 0.41156462585034015,
+        "status": "partially_occluded",
+        "policy": "bbox_unoccluded_area_fraction",
+        "note": "Estimate uses axis-aligned text bbox area, not glyph-mask pixels."
+      }
+    },
+    {
+      "region_id": "storefront_description",
+      "transcription": "मोबाईल दुरुस्ती व सेवा",
+      "language": "marathi",
+      "script": "Devanagari",
+      "reading_order": 1,
+      "bbox": {
+        "x_min": 454,
+        "y_min": 453,
+        "x_max": 680,
+        "y_max": 488
+      },
+      "polygon": [
+        [
+          454,
+          453
+        ],
+        [
+          680,
+          453
+        ],
+        [
+          680,
+          488
+        ],
+        [
+          454,
+          488
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Devanagari",
+        "path": "assets/fonts/devanagari/NotoSansDevanagari-Regular.ttf",
+        "style": "Regular",
+        "size_px": 28
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "left",
+        "foreground_rgb": [
+          25,
+          40,
+          68
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      },
+      "board_bbox": {
+        "x_min": 304,
+        "y_min": 389,
+        "x_max": 530,
+        "y_max": 424
+      },
+      "board_polygon": [
+        [
+          304,
+          389
+        ],
+        [
+          530,
+          389
+        ],
+        [
+          530,
+          424
+        ],
+        [
+          304,
+          424
+        ]
+      ],
+      "visibility": {
+        "estimated_fraction": 1.0,
+        "status": "visible",
+        "policy": "bbox_unoccluded_area_fraction",
+        "note": "Estimate uses axis-aligned text bbox area, not glyph-mask pixels."
+      }
+    }
+  ],
+  "generation_parameters": {
+    "template_id": "logo_business_sign",
+    "background_rgb": [
+      243,
+      231,
+      231
+    ],
+    "border_rgb": [
+      24,
+      86,
+      74
+    ],
+    "text_rgb": [
+      25,
+      40,
+      68
+    ],
+    "border_width_px": 6,
+    "outer_padding_px": 42,
+    "alignment": "left",
+    "logo": {
+      "type": "procedural_storefront_emblem",
+      "center": [
+        156,
+        300
+      ],
+      "radius_px": 102,
+      "color_rgb": [
+        162,
+        68,
+        87
+      ],
+      "contains_text": false
+    },
+    "region_layout": [
+      {
+        "region_id": "shop_name",
+        "canvas_x": 294,
+        "canvas_y": 144,
+        "canvas_width": 864,
+        "canvas_height": 180,
+        "font_size_px": 48,
+        "padding_px": 10,
+        "line_spacing": 1.12,
+        "content_type": "shop_name",
+        "hierarchy": "main",
+        "alignment": "left"
+      },
+      {
+        "region_id": "storefront_description",
+        "canvas_x": 294,
+        "canvas_y": 354,
+        "canvas_width": 864,
+        "canvas_height": 108,
+        "font_size_px": 28,
+        "padding_px": 10,
+        "line_spacing": 1.12,
+        "content_type": "storefront_description",
+        "hierarchy": "secondary",
+        "alignment": "left"
+      }
+    ],
+    "board_position_in_scene": {
+      "x": 150,
+      "y": 64,
+      "width": 1200,
+      "height": 600
+    }
+  },
+  "validation": {
+    "status": "passed",
+    "warnings": [
+      "visual_review_required"
+    ],
+    "visual_review_required": true,
+    "errors": []
+  },
+  "board_layer": "../../../storefront_scenes_seed_20261029/storefront-013528a5-0003-marathi_board.png",
+  "source_board_sample_id": "storefront-013528a5-0003-marathi-board",
+  "scene_transform": {
+    "type": "translation_only",
+    "translate_x": 150,
+    "translate_y": 64,
+    "scale": 1.0,
+    "rotation_degrees": 0.0,
+    "perspective": false
+  },
+  "scene_parameters": {
+    "template_id": "procedural_storefront_v1",
+    "wall_rgb": [
+      224,
+      215,
+      212
+    ],
+    "trim_rgb": [
+      54,
+      75,
+      69
+    ],
+    "window_rgb": [
+      91,
+      119,
+      142
+    ],
+    "awning_rgb": [
+      76,
+      96,
+      151
+    ],
+    "awning_y": 706,
+    "random_seed": 16119332081961329422,
+    "visual_review_required": true
+  },
+  "source_random_seed": 3727268175602928162,
+  "parent": {
+    "sample_id": "storefront-013528a5-0003-marathi",
+    "image": "../../../storefront_scenes_seed_20261029/storefront-013528a5-0003-marathi.png",
+    "annotation": "../../../../annotations/storefront_scenes_seed_20261029/storefront-013528a5-0003-marathi.json"
+  },
+  "scene_difficulty": {
+    "profile": "D2_occlusion",
+    "random_seed": 8205929284599074220,
+    "transformations": [
+      {
+        "type": "occlusion",
+        "seed": 8205929284599074220,
+        "input_size": [
+          1500,
+          1100
+        ],
+        "output_size": [
+          1500,
+          1100
+        ],
+        "occlusion_region": {
+          "x_min": 516,
+          "y_min": 188,
+          "x_max": 689,
+          "y_max": 394
+        },
+        "color_rgb": [
+          89,
+          72,
+          102
+        ],
+        "policy": "opaque_rectangular_foreground",
+        "visibility_policy": "bbox_unoccluded_area_fraction"
+      }
+    ],
+    "visibility_policy": "bbox_unoccluded_area_fraction",
+    "visibility_thresholds": {
+      "visible": 0.99,
+      "partial": 0.01
+    }
+  }
+}

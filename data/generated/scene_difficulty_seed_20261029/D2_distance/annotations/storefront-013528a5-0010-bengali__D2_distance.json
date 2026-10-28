@@ -1,0 +1,314 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "storefront-013528a5-0010-bengali__D2_distance",
+  "image": "storefront-013528a5-0010-bengali__D2_distance.png",
+  "image_width": 1268,
+  "image_height": 911,
+  "language": "bengali",
+  "script": "Bengali",
+  "category": "shop_board",
+  "random_seed": 644362808285846028,
+  "coordinate_convention": {
+    "origin": "top_left",
+    "x_direction": "right",
+    "y_direction": "down",
+    "coordinates": "pixel_edges; minimum edges inclusive and maximum edges exclusive"
+  },
+  "text_regions": [
+    {
+      "region_id": "shop_name",
+      "transcription": "শ্রী লক্ষ্মী ফার্নিচার",
+      "language": "bengali",
+      "script": "Bengali",
+      "reading_order": 0,
+      "bbox": {
+        "x_min": 485.01,
+        "y_min": 163.98000000000002,
+        "x_max": 782.1975,
+        "y_max": 210.71826086956523
+      },
+      "polygon": [
+        [
+          485.01,
+          163.98000000000002
+        ],
+        [
+          782.1975,
+          163.98000000000002
+        ],
+        [
+          782.1975,
+          210.71826086956523
+        ],
+        [
+          485.01,
+          210.71826086956523
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Bengali",
+        "path": "assets/fonts/bengali/NotoSansBengali-Regular.ttf",
+        "style": "Regular",
+        "size_px": 54
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "center",
+        "foreground_rgb": [
+          55,
+          30,
+          55
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      },
+      "board_bbox": {
+        "x_min": 292,
+        "y_min": 143,
+        "x_max": 667,
+        "y_max": 202
+      },
+      "board_polygon": [
+        [
+          292,
+          143
+        ],
+        [
+          667,
+          143
+        ],
+        [
+          667,
+          202
+        ],
+        [
+          292,
+          202
+        ]
+      ],
+      "visibility": {
+        "estimated_fraction": 1.0,
+        "status": "visible",
+        "policy": "bbox_unoccluded_area_fraction",
+        "note": "Estimate uses axis-aligned text bbox area, not glyph-mask pixels."
+      }
+    },
+    {
+      "region_id": "storefront_description",
+      "transcription": "আসবাব ও ঘর সাজানো",
+      "language": "bengali",
+      "script": "Bengali",
+      "reading_order": 1,
+      "bbox": {
+        "x_min": 530.975,
+        "y_min": 332.7130434782609,
+        "x_max": 737.025,
+        "y_max": 349.34869565217394
+      },
+      "polygon": [
+        [
+          530.975,
+          332.7130434782609
+        ],
+        [
+          737.025,
+          332.7130434782609
+        ],
+        [
+          737.025,
+          349.34869565217394
+        ],
+        [
+          530.975,
+          349.34869565217394
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Bengali",
+        "path": "assets/fonts/bengali/NotoSansBengali-Regular.ttf",
+        "style": "Regular",
+        "size_px": 28
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "center",
+        "foreground_rgb": [
+          55,
+          30,
+          55
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      },
+      "board_bbox": {
+        "x_min": 350,
+        "y_min": 356,
+        "x_max": 610,
+        "y_max": 377
+      },
+      "board_polygon": [
+        [
+          350,
+          356
+        ],
+        [
+          610,
+          356
+        ],
+        [
+          610,
+          377
+        ],
+        [
+          350,
+          377
+        ]
+      ],
+      "visibility": {
+        "estimated_fraction": 1.0,
+        "status": "visible",
+        "policy": "bbox_unoccluded_area_fraction",
+        "note": "Estimate uses axis-aligned text bbox area, not glyph-mask pixels."
+      }
+    }
+  ],
+  "generation_parameters": {
+    "template_id": "centered_business_subtitle",
+    "background_rgb": [
+      250,
+      239,
+      211
+    ],
+    "border_rgb": [
+      24,
+      86,
+      74
+    ],
+    "text_rgb": [
+      55,
+      30,
+      55
+    ],
+    "border_width_px": 6,
+    "outer_padding_px": 42,
+    "alignment": "center",
+    "logo": null,
+    "region_layout": [
+      {
+        "region_id": "shop_name",
+        "canvas_x": 42,
+        "canvas_y": 83,
+        "canvas_width": 876,
+        "canvas_height": 192,
+        "font_size_px": 54,
+        "padding_px": 10,
+        "line_spacing": 1.12,
+        "content_type": "shop_name",
+        "hierarchy": "main",
+        "alignment": "center"
+      },
+      {
+        "region_id": "storefront_description",
+        "canvas_x": 42,
+        "canvas_y": 317,
+        "canvas_width": 876,
+        "canvas_height": 104,
+        "font_size_px": 28,
+        "padding_px": 10,
+        "line_spacing": 1.12,
+        "content_type": "storefront_description",
+        "hierarchy": "secondary",
+        "alignment": "center"
+      }
+    ],
+    "board_position_in_scene": {
+      "x": 320,
+      "y": 64,
+      "width": 960,
+      "height": 520
+    }
+  },
+  "validation": {
+    "status": "passed",
+    "warnings": [
+      "visual_review_required"
+    ],
+    "visual_review_required": true,
+    "errors": []
+  },
+  "board_layer": "../../../storefront_scenes_seed_20261029/storefront-013528a5-0010-bengali_board.png",
+  "source_board_sample_id": "storefront-013528a5-0010-bengali-board",
+  "scene_transform": {
+    "type": "translation_only",
+    "translate_x": 320,
+    "translate_y": 64,
+    "scale": 1.0,
+    "rotation_degrees": 0.0,
+    "perspective": false
+  },
+  "scene_parameters": {
+    "template_id": "procedural_storefront_v1",
+    "wall_rgb": [
+      215,
+      222,
+      232
+    ],
+    "trim_rgb": [
+      56,
+      70,
+      91
+    ],
+    "window_rgb": [
+      114,
+      147,
+      151
+    ],
+    "awning_rgb": [
+      174,
+      76,
+      62
+    ],
+    "awning_y": 626,
+    "random_seed": 1928329977995171853,
+    "visual_review_required": true
+  },
+  "source_random_seed": 5383815144841506027,
+  "parent": {
+    "sample_id": "storefront-013528a5-0010-bengali",
+    "image": "../../../storefront_scenes_seed_20261029/storefront-013528a5-0010-bengali.png",
+    "annotation": "../../../../annotations/storefront_scenes_seed_20261029/storefront-013528a5-0010-bengali.json"
+  },
+  "scene_difficulty": {
+    "profile": "D2_distance",
+    "random_seed": 644362808285846028,
+    "transformations": [
+      {
+        "type": "distance_downscale",
+        "seed": 644362808285846028,
+        "requested_scale_x": 0.7921972349656001,
+        "requested_scale_y": 0.7921972349656001,
+        "scale_x": 0.7925,
+        "scale_y": 0.7921739130434783,
+        "input_size": [
+          1600,
+          1150
+        ],
+        "output_size": [
+          1268,
+          911
+        ]
+      }
+    ],
+    "visibility_policy": "bbox_unoccluded_area_fraction",
+    "visibility_thresholds": {
+      "visible": 0.99,
+      "partial": 0.01
+    }
+  }
+}

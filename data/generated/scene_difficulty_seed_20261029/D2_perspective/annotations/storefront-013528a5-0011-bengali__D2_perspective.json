@@ -1,0 +1,461 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "storefront-013528a5-0011-bengali__D2_perspective",
+  "image": "storefront-013528a5-0011-bengali__D2_perspective.png",
+  "image_width": 1500,
+  "image_height": 1100,
+  "language": "bengali",
+  "script": "Bengali",
+  "category": "shop_board",
+  "random_seed": 5999489967007607984,
+  "coordinate_convention": {
+    "origin": "top_left",
+    "x_direction": "right",
+    "y_direction": "down",
+    "coordinates": "pixel_edges; minimum edges inclusive and maximum edges exclusive"
+  },
+  "text_regions": [
+    {
+      "region_id": "shop_name",
+      "transcription": "অমল জুয়েলার্স",
+      "language": "bengali",
+      "script": "Bengali",
+      "reading_order": 0,
+      "bbox": {
+        "x_min": 613.4600742559423,
+        "y_min": 177.25694248564574,
+        "x_max": 893.6611673726414,
+        "y_max": 232.54724760351732
+      },
+      "polygon": [
+        [
+          613.6945441192695,
+          177.25694248564574
+        ],
+        [
+          893.4135088529704,
+          181.03777816316966
+        ],
+        [
+          893.6611673726414,
+          232.54724760351732
+        ],
+        [
+          613.4600742559423,
+          228.7148417784875
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Bengali",
+        "path": "assets/fonts/bengali/NotoSansBengali-Regular.ttf",
+        "style": "Regular",
+        "size_px": 48
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "center",
+        "foreground_rgb": [
+          55,
+          30,
+          55
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      },
+      "board_bbox": {
+        "x_min": 336,
+        "y_min": 127,
+        "x_max": 626,
+        "y_max": 181
+      },
+      "board_polygon": [
+        [
+          336,
+          127
+        ],
+        [
+          626,
+          127
+        ],
+        [
+          626,
+          181
+        ],
+        [
+          336,
+          181
+        ]
+      ],
+      "visibility": {
+        "estimated_fraction": 1.0,
+        "status": "visible",
+        "policy": "bbox_unoccluded_area_fraction",
+        "note": "Estimate uses axis-aligned text bbox area, not glyph-mask pixels."
+      }
+    },
+    {
+      "region_id": "storefront_description",
+      "transcription": "আসবাব ও ঘর সাজানো",
+      "language": "bengali",
+      "script": "Bengali",
+      "reading_order": 1,
+      "bbox": {
+        "x_min": 640.0021715280418,
+        "y_min": 345.04591959064044,
+        "x_max": 865.1678551859064,
+        "y_max": 366.5105442553559
+      },
+      "polygon": [
+        [
+          640.0689864631906,
+          345.04591959064044
+        ],
+        [
+          865.0975880331524,
+          348.2052421482211
+        ],
+        [
+          865.1678551859064,
+          366.5105442553559
+        ],
+        [
+          640.0021715280418,
+          363.3364296317682
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Bengali",
+        "path": "assets/fonts/bengali/NotoSansBengali-Regular.ttf",
+        "style": "Regular",
+        "size_px": 25
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "center",
+        "foreground_rgb": [
+          55,
+          30,
+          55
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      },
+      "board_bbox": {
+        "x_min": 364,
+        "y_min": 302,
+        "x_max": 596,
+        "y_max": 321
+      },
+      "board_polygon": [
+        [
+          364,
+          302
+        ],
+        [
+          596,
+          302
+        ],
+        [
+          596,
+          321
+        ],
+        [
+          364,
+          321
+        ]
+      ],
+      "visibility": {
+        "estimated_fraction": 1.0,
+        "status": "visible",
+        "policy": "bbox_unoccluded_area_fraction",
+        "note": "Estimate uses axis-aligned text bbox area, not glyph-mask pixels."
+      }
+    },
+    {
+      "region_id": "contact_details",
+      "transcription": "যোগাযোগ: ৯৮২০০ ১২৩৪৫",
+      "language": "bengali",
+      "script": "Bengali",
+      "reading_order": 2,
+      "bbox": {
+        "x_min": 637.721243358578,
+        "y_min": 437.6618988637339,
+        "x_max": 866.4946762838132,
+        "y_max": 458.3867393770395
+      },
+      "polygon": [
+        [
+          637.7860557024133,
+          437.6618988637339
+        ],
+        [
+          866.4271338375452,
+          440.9381208419231
+        ],
+        [
+          866.4946762838132,
+          458.3867393770395
+        ],
+        [
+          637.721243358578,
+          455.09615913542825
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Bengali",
+        "path": "assets/fonts/bengali/NotoSansBengali-Regular.ttf",
+        "style": "Regular",
+        "size_px": 22
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "center",
+        "foreground_rgb": [
+          55,
+          30,
+          55
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      },
+      "board_bbox": {
+        "x_min": 362,
+        "y_min": 398,
+        "x_max": 597,
+        "y_max": 416
+      },
+      "board_polygon": [
+        [
+          362,
+          398
+        ],
+        [
+          597,
+          398
+        ],
+        [
+          597,
+          416
+        ],
+        [
+          362,
+          416
+        ]
+      ],
+      "visibility": {
+        "estimated_fraction": 1.0,
+        "status": "visible",
+        "policy": "bbox_unoccluded_area_fraction",
+        "note": "Estimate uses axis-aligned text bbox area, not glyph-mask pixels."
+      }
+    }
+  ],
+  "generation_parameters": {
+    "template_id": "headline_contact_details",
+    "background_rgb": [
+      250,
+      239,
+      211
+    ],
+    "border_rgb": [
+      24,
+      86,
+      74
+    ],
+    "text_rgb": [
+      55,
+      30,
+      55
+    ],
+    "border_width_px": 6,
+    "outer_padding_px": 42,
+    "alignment": "center",
+    "logo": null,
+    "region_layout": [
+      {
+        "region_id": "shop_name",
+        "canvas_x": 42,
+        "canvas_y": 68,
+        "canvas_width": 876,
+        "canvas_height": 182,
+        "font_size_px": 48,
+        "padding_px": 10,
+        "line_spacing": 1.12,
+        "content_type": "shop_name",
+        "hierarchy": "main",
+        "alignment": "center"
+      },
+      {
+        "region_id": "storefront_description",
+        "canvas_x": 42,
+        "canvas_y": 270,
+        "canvas_width": 876,
+        "canvas_height": 88,
+        "font_size_px": 25,
+        "padding_px": 10,
+        "line_spacing": 1.12,
+        "content_type": "storefront_description",
+        "hierarchy": "secondary",
+        "alignment": "center"
+      },
+      {
+        "region_id": "contact_details",
+        "canvas_x": 42,
+        "canvas_y": 374,
+        "canvas_width": 876,
+        "canvas_height": 68,
+        "font_size_px": 22,
+        "padding_px": 8,
+        "line_spacing": 1.12,
+        "content_type": "contact_details",
+        "hierarchy": "tertiary",
+        "alignment": "center"
+      }
+    ],
+    "board_position_in_scene": {
+      "x": 270,
+      "y": 48,
+      "width": 960,
+      "height": 520
+    }
+  },
+  "validation": {
+    "status": "passed",
+    "warnings": [
+      "visual_review_required"
+    ],
+    "visual_review_required": true,
+    "errors": []
+  },
+  "board_layer": "../../../storefront_scenes_seed_20261029/storefront-013528a5-0011-bengali_board.png",
+  "source_board_sample_id": "storefront-013528a5-0011-bengali-board",
+  "scene_transform": {
+    "type": "translation_only",
+    "translate_x": 270,
+    "translate_y": 48,
+    "scale": 1.0,
+    "rotation_degrees": 0.0,
+    "perspective": false
+  },
+  "scene_parameters": {
+    "template_id": "procedural_storefront_v1",
+    "wall_rgb": [
+      226,
+      218,
+      198
+    ],
+    "trim_rgb": [
+      81,
+      69,
+      57
+    ],
+    "window_rgb": [
+      95,
+      133,
+      145
+    ],
+    "awning_rgb": [
+      176,
+      130,
+      48
+    ],
+    "awning_y": 610,
+    "random_seed": 4508271859325542291,
+    "visual_review_required": true
+  },
+  "source_random_seed": 17615112293873973501,
+  "parent": {
+    "sample_id": "storefront-013528a5-0011-bengali",
+    "image": "../../../storefront_scenes_seed_20261029/storefront-013528a5-0011-bengali.png",
+    "annotation": "../../../../annotations/storefront_scenes_seed_20261029/storefront-013528a5-0011-bengali.json"
+  },
+  "scene_difficulty": {
+    "profile": "D2_perspective",
+    "random_seed": 5999489967007607984,
+    "transformations": [
+      {
+        "type": "perspective",
+        "seed": 5999489967007607984,
+        "coordinate_system": "pixel_edges",
+        "homography": [
+          [
+            0.9547940560662527,
+            -0.02370512522727267,
+            34.73072814941406
+          ],
+          [
+            0.012400499790829668,
+            0.9386947379121515,
+            4.168873310089111
+          ],
+          [
+            -2.988974564998565e-06,
+            -3.1615715080658215e-05,
+            1.0
+          ]
+        ],
+        "input_size": [
+          1500,
+          1100
+        ],
+        "output_size": [
+          1500,
+          1100
+        ],
+        "interpolation": "opencv_inter_linear",
+        "border_mode": "replicate",
+        "inset_fraction": 0.053729089670964375,
+        "source_corners": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1500.0,
+            0.0
+          ],
+          [
+            1500.0,
+            1100.0
+          ],
+          [
+            0.0,
+            1100.0
+          ]
+        ],
+        "destination_corners": [
+          [
+            34.73072814941406,
+            4.168873310089111
+          ],
+          [
+            1473.5283203125,
+            22.872169494628906
+          ],
+          [
+            1499.7265625,
+            1098.460205078125
+          ],
+          [
+            8.966936111450195,
+            1074.0869140625
+          ]
+        ]
+      }
+    ],
+    "visibility_policy": "bbox_unoccluded_area_fraction",
+    "visibility_thresholds": {
+      "visible": 0.99,
+      "partial": 0.01
+    }
+  }
+}

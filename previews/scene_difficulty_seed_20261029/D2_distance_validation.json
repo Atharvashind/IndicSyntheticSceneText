@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "image_dir": "D:\\IndicSyntheticSceneText\\data\\generated\\scene_difficulty_seed_20261029\\D2_distance\\images",
+  "annotation_dir": "D:\\IndicSyntheticSceneText\\data\\generated\\scene_difficulty_seed_20261029\\D2_distance\\annotations",
+  "image_count": 12,
+  "annotation_count": 12,
+  "sample_id_count": 12,
+  "language_counts": {
+    "bengali": 3,
+    "gujarati": 3,
+    "hindi": 3,
+    "marathi": 3
+  },
+  "category_counts": {
+    "shop_board": 12
+  },
+  "passed": true,
+  "errors": []
+}

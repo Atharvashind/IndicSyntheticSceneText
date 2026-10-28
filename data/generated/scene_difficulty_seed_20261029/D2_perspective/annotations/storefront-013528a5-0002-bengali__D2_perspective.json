@@ -1,0 +1,367 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "storefront-013528a5-0002-bengali__D2_perspective",
+  "image": "storefront-013528a5-0002-bengali__D2_perspective.png",
+  "image_width": 1500,
+  "image_height": 1100,
+  "language": "bengali",
+  "script": "Bengali",
+  "category": "shop_board",
+  "random_seed": 1351126651318224078,
+  "coordinate_convention": {
+    "origin": "top_left",
+    "x_direction": "right",
+    "y_direction": "down",
+    "coordinates": "pixel_edges; minimum edges inclusive and maximum edges exclusive"
+  },
+  "text_regions": [
+    {
+      "region_id": "shop_name",
+      "transcription": "স্নেহা বেকারি",
+      "language": "bengali",
+      "script": "Bengali",
+      "reading_order": 0,
+      "bbox": {
+        "x_min": 261.54386838490126,
+        "y_min": 198.78961645955877,
+        "x_max": 549.3183091038665,
+        "y_max": 257.27389610595515
+      },
+      "polygon": [
+        [
+          262.71196386719305,
+          201.23811113768815
+        ],
+        [
+          549.3183091038665,
+          198.78961645955877
+        ],
+        [
+          548.1619497489713,
+          255.1576279919442
+        ],
+        [
+          261.54386838490126,
+          257.27389610595515
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Bengali",
+        "path": "assets/fonts/bengali/NotoSansBengali-Regular.ttf",
+        "style": "Regular",
+        "size_px": 60
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "left",
+        "foreground_rgb": [
+          55,
+          30,
+          55
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      },
+      "board_bbox": {
+        "x_min": 55,
+        "y_min": 124,
+        "x_max": 352,
+        "y_max": 182
+      },
+      "board_polygon": [
+        [
+          55,
+          124
+        ],
+        [
+          352,
+          124
+        ],
+        [
+          352,
+          182
+        ],
+        [
+          55,
+          182
+        ]
+      ],
+      "visibility": {
+        "estimated_fraction": 1.0,
+        "status": "visible",
+        "policy": "bbox_unoccluded_area_fraction",
+        "note": "Estimate uses axis-aligned text bbox area, not glyph-mask pixels."
+      }
+    },
+    {
+      "region_id": "service_list",
+      "transcription": "টাটকা খাবার\nচা ও পানীয়",
+      "language": "bengali",
+      "script": "Bengali",
+      "reading_order": 1,
+      "bbox": {
+        "x_min": 253.33454682120242,
+        "y_min": 399.6987437581466,
+        "x_max": 393.26038108250845,
+        "y_max": 467.0010726736908
+      },
+      "polygon": [
+        [
+          254.7250191599097,
+          400.3116220111899
+        ],
+        [
+          393.26038108250845,
+          399.6987437581466
+        ],
+        [
+          391.87662338369756,
+          466.5793904183006
+        ],
+        [
+          253.33454682120242,
+          467.0010726736908
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Bengali",
+        "path": "assets/fonts/bengali/NotoSansBengali-Regular.ttf",
+        "style": "Regular",
+        "size_px": 28
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "left",
+        "foreground_rgb": [
+          55,
+          30,
+          55
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      },
+      "board_bbox": {
+        "x_min": 51,
+        "y_min": 330,
+        "x_max": 195,
+        "y_max": 399
+      },
+      "board_polygon": [
+        [
+          51,
+          330
+        ],
+        [
+          195,
+          330
+        ],
+        [
+          195,
+          399
+        ],
+        [
+          51,
+          399
+        ]
+      ],
+      "visibility": {
+        "estimated_fraction": 1.0,
+        "status": "visible",
+        "policy": "bbox_unoccluded_area_fraction",
+        "note": "Estimate uses axis-aligned text bbox area, not glyph-mask pixels."
+      }
+    }
+  ],
+  "generation_parameters": {
+    "template_id": "left_name_services",
+    "background_rgb": [
+      231,
+      242,
+      235
+    ],
+    "border_rgb": [
+      91,
+      48,
+      96
+    ],
+    "text_rgb": [
+      55,
+      30,
+      55
+    ],
+    "border_width_px": 10,
+    "outer_padding_px": 42,
+    "alignment": "left",
+    "logo": null,
+    "region_layout": [
+      {
+        "region_id": "shop_name",
+        "canvas_x": 42,
+        "canvas_y": 73,
+        "canvas_width": 1016,
+        "canvas_height": 179,
+        "font_size_px": 60,
+        "padding_px": 10,
+        "line_spacing": 1.12,
+        "content_type": "shop_name",
+        "hierarchy": "main",
+        "alignment": "left"
+      },
+      {
+        "region_id": "service_list",
+        "canvas_x": 42,
+        "canvas_y": 269,
+        "canvas_width": 1016,
+        "canvas_height": 202,
+        "font_size_px": 28,
+        "padding_px": 10,
+        "line_spacing": 1.12,
+        "content_type": "service_list",
+        "hierarchy": "secondary",
+        "alignment": "left"
+      }
+    ],
+    "board_position_in_scene": {
+      "x": 200,
+      "y": 64,
+      "width": 1100,
+      "height": 560
+    }
+  },
+  "validation": {
+    "status": "passed",
+    "warnings": [
+      "visual_review_required"
+    ],
+    "visual_review_required": true,
+    "errors": []
+  },
+  "board_layer": "../../../storefront_scenes_seed_20261029/storefront-013528a5-0002-bengali_board.png",
+  "source_board_sample_id": "storefront-013528a5-0002-bengali-board",
+  "scene_transform": {
+    "type": "translation_only",
+    "translate_x": 200,
+    "translate_y": 64,
+    "scale": 1.0,
+    "rotation_degrees": 0.0,
+    "perspective": false
+  },
+  "scene_parameters": {
+    "template_id": "procedural_storefront_v1",
+    "wall_rgb": [
+      224,
+      215,
+      212
+    ],
+    "trim_rgb": [
+      54,
+      75,
+      69
+    ],
+    "window_rgb": [
+      114,
+      147,
+      151
+    ],
+    "awning_rgb": [
+      176,
+      130,
+      48
+    ],
+    "awning_y": 666,
+    "random_seed": 7814274803328751304,
+    "visual_review_required": true
+  },
+  "source_random_seed": 8111430461030683452,
+  "parent": {
+    "sample_id": "storefront-013528a5-0002-bengali",
+    "image": "../../../storefront_scenes_seed_20261029/storefront-013528a5-0002-bengali.png",
+    "annotation": "../../../../annotations/storefront_scenes_seed_20261029/storefront-013528a5-0002-bengali.json"
+  },
+  "scene_difficulty": {
+    "profile": "D2_perspective",
+    "random_seed": 1351126651318224078,
+    "transformations": [
+      {
+        "type": "perspective",
+        "seed": 1351126651318224078,
+        "coordinate_system": "pixel_edges",
+        "homography": [
+          [
+            0.9490950230009217,
+            -0.020324337878848693,
+            23.1358699798584
+          ],
+          [
+            -0.012126706853228848,
+            0.9607815195207848,
+            22.648067474365234
+          ],
+          [
+            -1.9748791005177406e-05,
+            -1.11027688108898e-06,
+            1.0
+          ]
+        ],
+        "input_size": [
+          1500,
+          1100
+        ],
+        "output_size": [
+          1500,
+          1100
+        ],
+        "interpolation": "opencv_inter_linear",
+        "border_mode": "replicate",
+        "inset_fraction": 0.04691672353814195,
+        "source_corners": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1500.0,
+            0.0
+          ],
+          [
+            1500.0,
+            1100.0
+          ],
+          [
+            0.0,
+            1100.0
+          ]
+        ],
+        "destination_corners": [
+          [
+            23.1358699798584,
+            22.648067474365234
+          ],
+          [
+            1490.9449462890625,
+            4.594099044799805
+          ],
+          [
+            1469.7554931640625,
+            1095.0953369140625
+          ],
+          [
+            0.7800509929656982,
+            1080.8277587890625
+          ]
+        ]
+      }
+    ],
+    "visibility_policy": "bbox_unoccluded_area_fraction",
+    "visibility_thresholds": {
+      "visible": 0.99,
+      "partial": 0.01
+    }
+  }
+}

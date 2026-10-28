@@ -1,0 +1,314 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "storefront-013528a5-0007-gujarati__D2_distance",
+  "image": "storefront-013528a5-0007-gujarati__D2_distance.png",
+  "image_width": 1200,
+  "image_height": 880,
+  "language": "gujarati",
+  "script": "Gujarati",
+  "category": "shop_board",
+  "random_seed": 5923477664052318477,
+  "coordinate_convention": {
+    "origin": "top_left",
+    "x_direction": "right",
+    "y_direction": "down",
+    "coordinates": "pixel_edges; minimum edges inclusive and maximum edges exclusive"
+  },
+  "text_regions": [
+    {
+      "region_id": "multiline_shop_name",
+      "transcription": "સ્નેહા\nબેકરી",
+      "language": "gujarati",
+      "script": "Gujarati",
+      "reading_order": 0,
+      "bbox": {
+        "x_min": 558.4,
+        "y_min": 165.60000000000002,
+        "x_max": 642.4000000000001,
+        "y_max": 269.6
+      },
+      "polygon": [
+        [
+          558.4,
+          165.60000000000002
+        ],
+        [
+          642.4000000000001,
+          165.60000000000002
+        ],
+        [
+          642.4000000000001,
+          269.6
+        ],
+        [
+          558.4,
+          269.6
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Gujarati",
+        "path": "assets/fonts/gujarati/NotoSansGujarati-Regular.ttf",
+        "style": "Regular",
+        "size_px": 54
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "center",
+        "foreground_rgb": [
+          25,
+          40,
+          68
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      },
+      "board_bbox": {
+        "x_min": 548,
+        "y_min": 143,
+        "x_max": 653,
+        "y_max": 273
+      },
+      "board_polygon": [
+        [
+          548,
+          143
+        ],
+        [
+          653,
+          143
+        ],
+        [
+          653,
+          273
+        ],
+        [
+          548,
+          273
+        ]
+      ],
+      "visibility": {
+        "estimated_fraction": 1.0,
+        "status": "visible",
+        "policy": "bbox_unoccluded_area_fraction",
+        "note": "Estimate uses axis-aligned text bbox area, not glyph-mask pixels."
+      }
+    },
+    {
+      "region_id": "service_list",
+      "transcription": "તાજો નાસ્તો\nચા અને પીણાં",
+      "language": "gujarati",
+      "script": "Gujarati",
+      "reading_order": 1,
+      "bbox": {
+        "x_min": 552.0,
+        "y_min": 387.20000000000005,
+        "x_max": 648.0,
+        "y_max": 439.20000000000005
+      },
+      "polygon": [
+        [
+          552.0,
+          387.20000000000005
+        ],
+        [
+          648.0,
+          387.20000000000005
+        ],
+        [
+          648.0,
+          439.20000000000005
+        ],
+        [
+          552.0,
+          439.20000000000005
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Gujarati",
+        "path": "assets/fonts/gujarati/NotoSansGujarati-Regular.ttf",
+        "style": "Regular",
+        "size_px": 25
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "center",
+        "foreground_rgb": [
+          25,
+          40,
+          68
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      },
+      "board_bbox": {
+        "x_min": 540,
+        "y_min": 420,
+        "x_max": 660,
+        "y_max": 485
+      },
+      "board_polygon": [
+        [
+          540,
+          420
+        ],
+        [
+          660,
+          420
+        ],
+        [
+          660,
+          485
+        ],
+        [
+          540,
+          485
+        ]
+      ],
+      "visibility": {
+        "estimated_fraction": 1.0,
+        "status": "visible",
+        "policy": "bbox_unoccluded_area_fraction",
+        "note": "Estimate uses axis-aligned text bbox area, not glyph-mask pixels."
+      }
+    }
+  ],
+  "generation_parameters": {
+    "template_id": "multiline_hierarchy",
+    "background_rgb": [
+      231,
+      242,
+      235
+    ],
+    "border_rgb": [
+      24,
+      86,
+      74
+    ],
+    "text_rgb": [
+      25,
+      40,
+      68
+    ],
+    "border_width_px": 10,
+    "outer_padding_px": 42,
+    "alignment": "center",
+    "logo": null,
+    "region_layout": [
+      {
+        "region_id": "multiline_shop_name",
+        "canvas_x": 42,
+        "canvas_y": 72,
+        "canvas_width": 1116,
+        "canvas_height": 294,
+        "font_size_px": 54,
+        "padding_px": 10,
+        "line_spacing": 1.12,
+        "content_type": "multiline_shop_name",
+        "hierarchy": "main",
+        "alignment": "center"
+      },
+      {
+        "region_id": "service_list",
+        "canvas_x": 42,
+        "canvas_y": 396,
+        "canvas_width": 1116,
+        "canvas_height": 120,
+        "font_size_px": 25,
+        "padding_px": 10,
+        "line_spacing": 1.12,
+        "content_type": "service_list",
+        "hierarchy": "secondary",
+        "alignment": "center"
+      }
+    ],
+    "board_position_in_scene": {
+      "x": 150,
+      "y": 64,
+      "width": 1200,
+      "height": 600
+    }
+  },
+  "validation": {
+    "status": "passed",
+    "warnings": [
+      "visual_review_required"
+    ],
+    "visual_review_required": true,
+    "errors": []
+  },
+  "board_layer": "../../../storefront_scenes_seed_20261029/storefront-013528a5-0007-gujarati_board.png",
+  "source_board_sample_id": "storefront-013528a5-0007-gujarati-board",
+  "scene_transform": {
+    "type": "translation_only",
+    "translate_x": 150,
+    "translate_y": 64,
+    "scale": 1.0,
+    "rotation_degrees": 0.0,
+    "perspective": false
+  },
+  "scene_parameters": {
+    "template_id": "procedural_storefront_v1",
+    "wall_rgb": [
+      215,
+      225,
+      217
+    ],
+    "trim_rgb": [
+      81,
+      69,
+      57
+    ],
+    "window_rgb": [
+      91,
+      119,
+      142
+    ],
+    "awning_rgb": [
+      76,
+      96,
+      151
+    ],
+    "awning_y": 706,
+    "random_seed": 16969287922582030754,
+    "visual_review_required": true
+  },
+  "source_random_seed": 5675572022860224264,
+  "parent": {
+    "sample_id": "storefront-013528a5-0007-gujarati",
+    "image": "../../../storefront_scenes_seed_20261029/storefront-013528a5-0007-gujarati.png",
+    "annotation": "../../../../annotations/storefront_scenes_seed_20261029/storefront-013528a5-0007-gujarati.json"
+  },
+  "scene_difficulty": {
+    "profile": "D2_distance",
+    "random_seed": 5923477664052318477,
+    "transformations": [
+      {
+        "type": "distance_downscale",
+        "seed": 5923477664052318477,
+        "requested_scale_x": 0.7998559700206422,
+        "requested_scale_y": 0.7998559700206422,
+        "scale_x": 0.8,
+        "scale_y": 0.8,
+        "input_size": [
+          1500,
+          1100
+        ],
+        "output_size": [
+          1200,
+          880
+        ]
+      }
+    ],
+    "visibility_policy": "bbox_unoccluded_area_fraction",
+    "visibility_thresholds": {
+      "visible": 0.99,
+      "partial": 0.01
+    }
+  }
+}

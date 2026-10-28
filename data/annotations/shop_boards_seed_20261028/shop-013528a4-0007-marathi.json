@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "shop-013528a4-0007-marathi",
+  "image": "shop-013528a4-0007-marathi.png",
+  "image_width": 1200,
+  "image_height": 600,
+  "language": "marathi",
+  "script": "Devanagari",
+  "category": "shop_board",
+  "random_seed": 14301632832686973438,
+  "coordinate_convention": {
+    "origin": "top_left",
+    "x_direction": "right",
+    "y_direction": "down",
+    "coordinates": "pixel_edges; minimum edges inclusive and maximum edges exclusive"
+  },
+  "text_regions": [
+    {
+      "region_id": "shop_name",
+      "transcription": "कृष्णा इलेक्ट्रॉनिक्स",
+      "language": "marathi",
+      "script": "Devanagari",
+      "reading_order": 0,
+      "bbox": {
+        "x_min": 819,
+        "y_min": 188,
+        "x_max": 1150,
+        "y_max": 244
+      },
+      "polygon": [
+        [
+          819,
+          188
+        ],
+        [
+          1150,
+          188
+        ],
+        [
+          1150,
+          244
+        ],
+        [
+          819,
+          244
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Devanagari",
+        "path": "assets/fonts/devanagari/NotoSansDevanagari-Regular.ttf",
+        "style": "Regular",
+        "size_px": 48
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "right",
+        "foreground_rgb": [
+          25,
+          40,
+          68
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "region_id": "storefront_description",
+      "transcription": "मोबाईल दुरुस्ती व सेवा",
+      "language": "marathi",
+      "script": "Devanagari",
+      "reading_order": 1,
+      "bbox": {
+        "x_min": 876,
+        "y_min": 416,
+        "x_max": 1151,
+        "y_max": 456
+      },
+      "polygon": [
+        [
+          876,
+          416
+        ],
+        [
+          1151,
+          416
+        ],
+        [
+          1151,
+          456
+        ],
+        [
+          876,
+          456
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Devanagari",
+        "path": "assets/fonts/devanagari/NotoSansDevanagari-Regular.ttf",
+        "style": "Regular",
+        "size_px": 34
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "right",
+        "foreground_rgb": [
+          25,
+          40,
+          68
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "generation_parameters": {
+    "template_id": "procedural_shop_board_v1",
+    "background_rgb": [
+      230,
+      238,
+      250
+    ],
+    "border_rgb": [
+      35,
+      67,
+      117
+    ],
+    "text_rgb": [
+      25,
+      40,
+      68
+    ],
+    "border_width_px": 6,
+    "outer_padding_px": 42,
+    "alignment": "right",
+    "region_layout": [
+      {
+        "region_id": "shop_name",
+        "canvas_x": 42,
+        "canvas_y": 102,
+        "canvas_width": 1116,
+        "canvas_height": 234,
+        "font_size_px": 48,
+        "padding_px": 10,
+        "line_spacing": 1.12
+      },
+      {
+        "region_id": "storefront_description",
+        "canvas_x": 42,
+        "canvas_y": 372,
+        "canvas_width": 1116,
+        "canvas_height": 132,
+        "font_size_px": 34,
+        "padding_px": 8,
+        "line_spacing": 1.12
+      }
+    ]
+  },
+  "validation": {
+    "status": "passed",
+    "warnings": [
+      "visual_review_required"
+    ],
+    "visual_review_required": true,
+    "errors": []
+  }
+}

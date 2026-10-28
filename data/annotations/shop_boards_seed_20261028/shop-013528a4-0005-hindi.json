@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "shop-013528a4-0005-hindi",
+  "image": "shop-013528a4-0005-hindi.png",
+  "image_width": 1200,
+  "image_height": 600,
+  "language": "hindi",
+  "script": "Devanagari",
+  "category": "shop_board",
+  "random_seed": 10789129123187448320,
+  "coordinate_convention": {
+    "origin": "top_left",
+    "x_direction": "right",
+    "y_direction": "down",
+    "coordinates": "pixel_edges; minimum edges inclusive and maximum edges exclusive"
+  },
+  "text_regions": [
+    {
+      "region_id": "shop_name",
+      "transcription": "स्नेहा बेकरी",
+      "language": "hindi",
+      "script": "Devanagari",
+      "reading_order": 0,
+      "bbox": {
+        "x_min": 516,
+        "y_min": 191,
+        "x_max": 685,
+        "y_max": 235
+      },
+      "polygon": [
+        [
+          516,
+          191
+        ],
+        [
+          685,
+          191
+        ],
+        [
+          685,
+          235
+        ],
+        [
+          516,
+          235
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Devanagari",
+        "path": "assets/fonts/devanagari/NotoSansDevanagari-Regular.ttf",
+        "style": "Regular",
+        "size_px": 42
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "center",
+        "foreground_rgb": [
+          44,
+          35,
+          28
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "region_id": "storefront_description",
+      "transcription": "आभूषण और उपहार",
+      "language": "hindi",
+      "script": "Devanagari",
+      "reading_order": 1,
+      "bbox": {
+        "x_min": 488,
+        "y_min": 418,
+        "x_max": 714,
+        "y_max": 454
+      },
+      "polygon": [
+        [
+          488,
+          418
+        ],
+        [
+          714,
+          418
+        ],
+        [
+          714,
+          454
+        ],
+        [
+          488,
+          454
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Devanagari",
+        "path": "assets/fonts/devanagari/NotoSansDevanagari-Regular.ttf",
+        "style": "Regular",
+        "size_px": 31
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "center",
+        "foreground_rgb": [
+          44,
+          35,
+          28
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "generation_parameters": {
+    "template_id": "procedural_shop_board_v1",
+    "background_rgb": [
+      230,
+      238,
+      250
+    ],
+    "border_rgb": [
+      91,
+      48,
+      96
+    ],
+    "text_rgb": [
+      44,
+      35,
+      28
+    ],
+    "border_width_px": 10,
+    "outer_padding_px": 42,
+    "alignment": "center",
+    "region_layout": [
+      {
+        "region_id": "shop_name",
+        "canvas_x": 42,
+        "canvas_y": 102,
+        "canvas_width": 1116,
+        "canvas_height": 234,
+        "font_size_px": 42,
+        "padding_px": 10,
+        "line_spacing": 1.12
+      },
+      {
+        "region_id": "storefront_description",
+        "canvas_x": 42,
+        "canvas_y": 372,
+        "canvas_width": 1116,
+        "canvas_height": 132,
+        "font_size_px": 31,
+        "padding_px": 8,
+        "line_spacing": 1.12
+      }
+    ]
+  },
+  "validation": {
+    "status": "passed",
+    "warnings": [
+      "visual_review_required"
+    ],
+    "visual_review_required": true,
+    "errors": []
+  }
+}

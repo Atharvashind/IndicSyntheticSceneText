@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "shop-013528a4-0003-gujarati",
+  "image": "shop-013528a4-0003-gujarati.png",
+  "image_width": 1100,
+  "image_height": 560,
+  "language": "gujarati",
+  "script": "Gujarati",
+  "category": "shop_board",
+  "random_seed": 4301776111824133260,
+  "coordinate_convention": {
+    "origin": "top_left",
+    "x_direction": "right",
+    "y_direction": "down",
+    "coordinates": "pixel_edges; minimum edges inclusive and maximum edges exclusive"
+  },
+  "text_regions": [
+    {
+      "region_id": "shop_name",
+      "transcription": "અમોલ જ્વેલર્સ",
+      "language": "gujarati",
+      "script": "Gujarati",
+      "reading_order": 0,
+      "bbox": {
+        "x_min": 421,
+        "y_min": 173,
+        "x_max": 682,
+        "y_max": 217
+      },
+      "polygon": [
+        [
+          421,
+          173
+        ],
+        [
+          682,
+          173
+        ],
+        [
+          682,
+          217
+        ],
+        [
+          421,
+          217
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Gujarati",
+        "path": "assets/fonts/gujarati/NotoSansGujarati-Regular.ttf",
+        "style": "Regular",
+        "size_px": 48
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "center",
+        "foreground_rgb": [
+          20,
+          52,
+          48
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "region_id": "storefront_description",
+      "transcription": "તાજો નાસ્તો અને પીણાં",
+      "language": "gujarati",
+      "script": "Gujarati",
+      "reading_order": 1,
+      "bbox": {
+        "x_min": 437,
+        "y_min": 389,
+        "x_max": 665,
+        "y_max": 420
+      },
+      "polygon": [
+        [
+          437,
+          389
+        ],
+        [
+          665,
+          389
+        ],
+        [
+          665,
+          420
+        ],
+        [
+          437,
+          420
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Gujarati",
+        "path": "assets/fonts/gujarati/NotoSansGujarati-Regular.ttf",
+        "style": "Regular",
+        "size_px": 28
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "center",
+        "foreground_rgb": [
+          20,
+          52,
+          48
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "generation_parameters": {
+    "template_id": "procedural_shop_board_v1",
+    "background_rgb": [
+      250,
+      239,
+      211
+    ],
+    "border_rgb": [
+      100,
+      54,
+      35
+    ],
+    "text_rgb": [
+      20,
+      52,
+      48
+    ],
+    "border_width_px": 10,
+    "outer_padding_px": 42,
+    "alignment": "center",
+    "region_layout": [
+      {
+        "region_id": "shop_name",
+        "canvas_x": 42,
+        "canvas_y": 95,
+        "canvas_width": 1016,
+        "canvas_height": 218,
+        "font_size_px": 48,
+        "padding_px": 10,
+        "line_spacing": 1.12
+      },
+      {
+        "region_id": "storefront_description",
+        "canvas_x": 42,
+        "canvas_y": 347,
+        "canvas_width": 1016,
+        "canvas_height": 123,
+        "font_size_px": 28,
+        "padding_px": 8,
+        "line_spacing": 1.12
+      }
+    ]
+  },
+  "validation": {
+    "status": "passed",
+    "warnings": [
+      "visual_review_required"
+    ],
+    "visual_review_required": true,
+    "errors": []
+  }
+}

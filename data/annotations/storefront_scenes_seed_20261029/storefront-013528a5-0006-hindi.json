@@ -1,0 +1,269 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "storefront-013528a5-0006-hindi",
+  "image": "storefront-013528a5-0006-hindi.png",
+  "image_width": 1600,
+  "image_height": 1150,
+  "language": "hindi",
+  "script": "Devanagari",
+  "category": "shop_board",
+  "random_seed": 1859024581364020501,
+  "coordinate_convention": {
+    "origin": "top_left",
+    "x_direction": "right",
+    "y_direction": "down",
+    "coordinates": "pixel_edges; minimum edges inclusive and maximum edges exclusive"
+  },
+  "text_regions": [
+    {
+      "region_id": "shop_name",
+      "transcription": "श्री लक्ष्मी फर्नीचर",
+      "language": "hindi",
+      "script": "Devanagari",
+      "reading_order": 0,
+      "bbox": {
+        "x_min": 636,
+        "y_min": 238,
+        "x_max": 966,
+        "y_max": 292
+      },
+      "polygon": [
+        [
+          636,
+          238
+        ],
+        [
+          966,
+          238
+        ],
+        [
+          966,
+          292
+        ],
+        [
+          636,
+          292
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Devanagari",
+        "path": "assets/fonts/devanagari/NotoSansDevanagari-Regular.ttf",
+        "style": "Regular",
+        "size_px": 54
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "center",
+        "foreground_rgb": [
+          25,
+          40,
+          68
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      },
+      "board_bbox": {
+        "x_min": 386,
+        "y_min": 158,
+        "x_max": 716,
+        "y_max": 212
+      },
+      "board_polygon": [
+        [
+          386,
+          158
+        ],
+        [
+          716,
+          158
+        ],
+        [
+          716,
+          212
+        ],
+        [
+          386,
+          212
+        ]
+      ]
+    },
+    {
+      "region_id": "storefront_description",
+      "transcription": "फर्नीचर और घर की सजावट",
+      "language": "hindi",
+      "script": "Devanagari",
+      "reading_order": 1,
+      "bbox": {
+        "x_min": 662,
+        "y_min": 459,
+        "x_max": 939,
+        "y_max": 486
+      },
+      "polygon": [
+        [
+          662,
+          459
+        ],
+        [
+          939,
+          459
+        ],
+        [
+          939,
+          486
+        ],
+        [
+          662,
+          486
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Devanagari",
+        "path": "assets/fonts/devanagari/NotoSansDevanagari-Regular.ttf",
+        "style": "Regular",
+        "size_px": 28
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "center",
+        "foreground_rgb": [
+          25,
+          40,
+          68
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      },
+      "board_bbox": {
+        "x_min": 412,
+        "y_min": 379,
+        "x_max": 689,
+        "y_max": 406
+      },
+      "board_polygon": [
+        [
+          412,
+          379
+        ],
+        [
+          689,
+          379
+        ],
+        [
+          689,
+          406
+        ],
+        [
+          412,
+          406
+        ]
+      ]
+    }
+  ],
+  "generation_parameters": {
+    "template_id": "centered_business_subtitle",
+    "background_rgb": [
+      231,
+      242,
+      235
+    ],
+    "border_rgb": [
+      91,
+      48,
+      96
+    ],
+    "text_rgb": [
+      25,
+      40,
+      68
+    ],
+    "border_width_px": 8,
+    "outer_padding_px": 42,
+    "alignment": "center",
+    "logo": null,
+    "region_layout": [
+      {
+        "region_id": "shop_name",
+        "canvas_x": 42,
+        "canvas_y": 90,
+        "canvas_width": 1016,
+        "canvas_height": 207,
+        "font_size_px": 54,
+        "padding_px": 10,
+        "line_spacing": 1.12,
+        "content_type": "shop_name",
+        "hierarchy": "main",
+        "alignment": "center"
+      },
+      {
+        "region_id": "storefront_description",
+        "canvas_x": 42,
+        "canvas_y": 342,
+        "canvas_width": 1016,
+        "canvas_height": 112,
+        "font_size_px": 28,
+        "padding_px": 10,
+        "line_spacing": 1.12,
+        "content_type": "storefront_description",
+        "hierarchy": "secondary",
+        "alignment": "center"
+      }
+    ],
+    "board_position_in_scene": {
+      "x": 250,
+      "y": 80,
+      "width": 1100,
+      "height": 560
+    }
+  },
+  "validation": {
+    "status": "passed",
+    "warnings": [
+      "visual_review_required"
+    ],
+    "visual_review_required": true,
+    "errors": []
+  },
+  "board_layer": "storefront-013528a5-0006-hindi_board.png",
+  "source_board_sample_id": "storefront-013528a5-0006-hindi-board",
+  "scene_transform": {
+    "type": "translation_only",
+    "translate_x": 250,
+    "translate_y": 80,
+    "scale": 1.0,
+    "rotation_degrees": 0.0,
+    "perspective": false
+  },
+  "scene_parameters": {
+    "template_id": "procedural_storefront_v1",
+    "wall_rgb": [
+      215,
+      225,
+      217
+    ],
+    "trim_rgb": [
+      89,
+      61,
+      69
+    ],
+    "window_rgb": [
+      91,
+      119,
+      142
+    ],
+    "awning_rgb": [
+      76,
+      96,
+      151
+    ],
+    "awning_y": 682,
+    "random_seed": 4707485913080578270,
+    "visual_review_required": true
+  }
+}

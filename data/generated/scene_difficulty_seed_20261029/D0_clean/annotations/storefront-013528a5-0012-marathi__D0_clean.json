@@ -1,0 +1,397 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "storefront-013528a5-0012-marathi__D0_clean",
+  "image": "storefront-013528a5-0012-marathi__D0_clean.png",
+  "image_width": 1600,
+  "image_height": 1150,
+  "language": "marathi",
+  "script": "Devanagari",
+  "category": "shop_board",
+  "random_seed": 4726397211770546092,
+  "coordinate_convention": {
+    "origin": "top_left",
+    "x_direction": "right",
+    "y_direction": "down",
+    "coordinates": "pixel_edges; minimum edges inclusive and maximum edges exclusive"
+  },
+  "text_regions": [
+    {
+      "region_id": "shop_name",
+      "transcription": "स्नेह बेकरी",
+      "language": "marathi",
+      "script": "Devanagari",
+      "reading_order": 0,
+      "bbox": {
+        "x_min": 699,
+        "y_min": 211,
+        "x_max": 902,
+        "y_max": 268
+      },
+      "polygon": [
+        [
+          699,
+          211
+        ],
+        [
+          902,
+          211
+        ],
+        [
+          902,
+          268
+        ],
+        [
+          699,
+          268
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Devanagari",
+        "path": "assets/fonts/devanagari/NotoSansDevanagari-Regular.ttf",
+        "style": "Regular",
+        "size_px": 54
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "center",
+        "foreground_rgb": [
+          25,
+          40,
+          68
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      },
+      "board_bbox": {
+        "x_min": 499,
+        "y_min": 147,
+        "x_max": 702,
+        "y_max": 204
+      },
+      "board_polygon": [
+        [
+          499,
+          147
+        ],
+        [
+          702,
+          147
+        ],
+        [
+          702,
+          204
+        ],
+        [
+          499,
+          204
+        ]
+      ],
+      "visibility": {
+        "estimated_fraction": 1.0,
+        "status": "visible",
+        "policy": "bbox_unoccluded_area_fraction",
+        "note": "Estimate uses axis-aligned text bbox area, not glyph-mask pixels."
+      }
+    },
+    {
+      "region_id": "storefront_description",
+      "transcription": "फर्निचर आणि घर सजावट",
+      "language": "marathi",
+      "script": "Devanagari",
+      "reading_order": 1,
+      "bbox": {
+        "x_min": 658,
+        "y_min": 406,
+        "x_max": 943,
+        "y_max": 435
+      },
+      "polygon": [
+        [
+          658,
+          406
+        ],
+        [
+          943,
+          406
+        ],
+        [
+          943,
+          435
+        ],
+        [
+          658,
+          435
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Devanagari",
+        "path": "assets/fonts/devanagari/NotoSansDevanagari-Regular.ttf",
+        "style": "Regular",
+        "size_px": 31
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "center",
+        "foreground_rgb": [
+          25,
+          40,
+          68
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      },
+      "board_bbox": {
+        "x_min": 458,
+        "y_min": 342,
+        "x_max": 743,
+        "y_max": 371
+      },
+      "board_polygon": [
+        [
+          458,
+          342
+        ],
+        [
+          743,
+          342
+        ],
+        [
+          743,
+          371
+        ],
+        [
+          458,
+          371
+        ]
+      ],
+      "visibility": {
+        "estimated_fraction": 1.0,
+        "status": "visible",
+        "policy": "bbox_unoccluded_area_fraction",
+        "note": "Estimate uses axis-aligned text bbox area, not glyph-mask pixels."
+      }
+    },
+    {
+      "region_id": "contact_details",
+      "transcription": "फोन: ९८७६५ ४३२१०",
+      "language": "marathi",
+      "script": "Devanagari",
+      "reading_order": 2,
+      "bbox": {
+        "x_min": 716,
+        "y_min": 520,
+        "x_max": 883,
+        "y_max": 543
+      },
+      "polygon": [
+        [
+          716,
+          520
+        ],
+        [
+          883,
+          520
+        ],
+        [
+          883,
+          543
+        ],
+        [
+          716,
+          543
+        ]
+      ],
+      "font": {
+        "family": "Noto Sans Devanagari",
+        "path": "assets/fonts/devanagari/NotoSansDevanagari-Regular.ttf",
+        "style": "Regular",
+        "size_px": 22
+      },
+      "rendering": {
+        "shaping_engine": "HarfBuzz 15.0.0 + FreeType",
+        "alignment": "center",
+        "foreground_rgb": [
+          25,
+          40,
+          68
+        ],
+        "outline_width_px": 0,
+        "shadow_offset_px": [
+          0,
+          0
+        ]
+      },
+      "board_bbox": {
+        "x_min": 516,
+        "y_min": 456,
+        "x_max": 683,
+        "y_max": 479
+      },
+      "board_polygon": [
+        [
+          516,
+          456
+        ],
+        [
+          683,
+          456
+        ],
+        [
+          683,
+          479
+        ],
+        [
+          516,
+          479
+        ]
+      ],
+      "visibility": {
+        "estimated_fraction": 1.0,
+        "status": "visible",
+        "policy": "bbox_unoccluded_area_fraction",
+        "note": "Estimate uses axis-aligned text bbox area, not glyph-mask pixels."
+      }
+    }
+  ],
+  "generation_parameters": {
+    "template_id": "headline_contact_details",
+    "background_rgb": [
+      231,
+      242,
+      235
+    ],
+    "border_rgb": [
+      100,
+      54,
+      35
+    ],
+    "text_rgb": [
+      25,
+      40,
+      68
+    ],
+    "border_width_px": 10,
+    "outer_padding_px": 42,
+    "alignment": "center",
+    "logo": null,
+    "region_layout": [
+      {
+        "region_id": "shop_name",
+        "canvas_x": 42,
+        "canvas_y": 78,
+        "canvas_width": 1116,
+        "canvas_height": 210,
+        "font_size_px": 54,
+        "padding_px": 10,
+        "line_spacing": 1.12,
+        "content_type": "shop_name",
+        "hierarchy": "main",
+        "alignment": "center"
+      },
+      {
+        "region_id": "storefront_description",
+        "canvas_x": 42,
+        "canvas_y": 312,
+        "canvas_width": 1116,
+        "canvas_height": 102,
+        "font_size_px": 31,
+        "padding_px": 10,
+        "line_spacing": 1.12,
+        "content_type": "storefront_description",
+        "hierarchy": "secondary",
+        "alignment": "center"
+      },
+      {
+        "region_id": "contact_details",
+        "canvas_x": 42,
+        "canvas_y": 432,
+        "canvas_width": 1116,
+        "canvas_height": 78,
+        "font_size_px": 22,
+        "padding_px": 8,
+        "line_spacing": 1.12,
+        "content_type": "contact_details",
+        "hierarchy": "tertiary",
+        "alignment": "center"
+      }
+    ],
+    "board_position_in_scene": {
+      "x": 200,
+      "y": 64,
+      "width": 1200,
+      "height": 600
+    }
+  },
+  "validation": {
+    "status": "passed",
+    "warnings": [
+      "visual_review_required"
+    ],
+    "visual_review_required": true,
+    "errors": []
+  },
+  "board_layer": "../../../storefront_scenes_seed_20261029/storefront-013528a5-0012-marathi_board.png",
+  "source_board_sample_id": "storefront-013528a5-0012-marathi-board",
+  "scene_transform": {
+    "type": "translation_only",
+    "translate_x": 200,
+    "translate_y": 64,
+    "scale": 1.0,
+    "rotation_degrees": 0.0,
+    "perspective": false
+  },
+  "scene_parameters": {
+    "template_id": "procedural_storefront_v1",
+    "wall_rgb": [
+      215,
+      222,
+      232
+    ],
+    "trim_rgb": [
+      89,
+      61,
+      69
+    ],
+    "window_rgb": [
+      91,
+      119,
+      142
+    ],
+    "awning_rgb": [
+      176,
+      130,
+      48
+    ],
+    "awning_y": 706,
+    "random_seed": 5766646236998952754,
+    "visual_review_required": true
+  },
+  "source_random_seed": 2500320709478990722,
+  "parent": {
+    "sample_id": "storefront-013528a5-0012-marathi",
+    "image": "../../../storefront_scenes_seed_20261029/storefront-013528a5-0012-marathi.png",
+    "annotation": "../../../../annotations/storefront_scenes_seed_20261029/storefront-013528a5-0012-marathi.json"
+  },
+  "scene_difficulty": {
+    "profile": "D0_clean",
+    "random_seed": 4726397211770546092,
+    "transformations": [
+      {
+        "type": "identity",
+        "seed": 4726397211770546092,
+        "geometry_changed": false
+      }
+    ],
+    "visibility_policy": "bbox_unoccluded_area_fraction",
+    "visibility_thresholds": {
+      "visible": 0.99,
+      "partial": 0.01
+    }
+  }
+}

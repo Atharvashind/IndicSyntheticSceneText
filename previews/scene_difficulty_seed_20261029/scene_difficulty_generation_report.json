@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0",
+  "source_image_dir": "D:\\IndicSyntheticSceneText\\data\\generated\\storefront_scenes_seed_20261029",
+  "source_annotation_dir": "D:\\IndicSyntheticSceneText\\data\\annotations\\storefront_scenes_seed_20261029",
+  "seed": 20261029,
+  "visibility_policy": "bbox_unoccluded_area_fraction",
+  "profiles": {
+    "D0_clean": {
+      "sample_count": 12,
+      "language_counts": {
+        "bengali": 3,
+        "gujarati": 3,
+        "hindi": 3,
+        "marathi": 3
+      },
+      "visibility_status_counts": {
+        "visible": 26
+      },
+      "image_dir": "D:\\IndicSyntheticSceneText\\data\\generated\\scene_difficulty_seed_20261029\\D0_clean\\images",
+      "annotation_dir": "D:\\IndicSyntheticSceneText\\data\\generated\\scene_difficulty_seed_20261029\\D0_clean\\annotations",
+      "contact_sheet": "D:\\IndicSyntheticSceneText\\previews\\scene_difficulty_seed_20261029\\D0_clean_contact_sheet.png",
+      "overlay_dir": "D:\\IndicSyntheticSceneText\\previews\\scene_difficulty_seed_20261029\\overlays\\D0_clean",
+      "passed": true
+    },
+    "D2_distance": {
+      "sample_count": 12,
+      "language_counts": {
+        "bengali": 3,
+        "gujarati": 3,
+        "hindi": 3,
+        "marathi": 3
+      },
+      "visibility_status_counts": {
+        "visible": 26
+      },
+      "image_dir": "D:\\IndicSyntheticSceneText\\data\\generated\\scene_difficulty_seed_20261029\\D2_distance\\images",
+      "annotation_dir": "D:\\IndicSyntheticSceneText\\data\\generated\\scene_difficulty_seed_20261029\\D2_distance\\annotations",
+      "contact_sheet": "D:\\IndicSyntheticSceneText\\previews\\scene_difficulty_seed_20261029\\D2_distance_contact_sheet.png",
+      "overlay_dir": "D:\\IndicSyntheticSceneText\\previews\\scene_difficulty_seed_20261029\\overlays\\D2_distance",
+      "passed": true
+    },
+    "D2_perspective": {
+      "sample_count": 12,
+      "language_counts": {
+        "bengali": 3,
+        "gujarati": 3,
+        "hindi": 3,
+        "marathi": 3
+      },
+      "visibility_status_counts": {
+        "visible": 26
+      },
+      "image_dir": "D:\\IndicSyntheticSceneText\\data\\generated\\scene_difficulty_seed_20261029\\D2_perspective\\images",
+      "annotation_dir": "D:\\IndicSyntheticSceneText\\data\\generated\\scene_difficulty_seed_20261029\\D2_perspective\\annotations",
+      "contact_sheet": "D:\\IndicSyntheticSceneText\\previews\\scene_difficulty_seed_20261029\\D2_perspective_contact_sheet.png",
+      "overlay_dir": "D:\\IndicSyntheticSceneText\\previews\\scene_difficulty_seed_20261029\\overlays\\D2_perspective",
+      "passed": true
+    },
+    "D2_lighting": {
+      "sample_count": 12,
+      "language_counts": {
+        "bengali": 3,
+        "gujarati": 3,
+        "hindi": 3,
+        "marathi": 3
+      },
+      "visibility_status_counts": {
+        "visible": 26
+      },
+      "image_dir": "D:\\IndicSyntheticSceneText\\data\\generated\\scene_difficulty_seed_20261029\\D2_lighting\\images",
+      "annotation_dir": "D:\\IndicSyntheticSceneText\\data\\generated\\scene_difficulty_seed_20261029\\D2_lighting\\annotations",
+      "contact_sheet": "D:\\IndicSyntheticSceneText\\previews\\scene_difficulty_seed_20261029\\D2_lighting_contact_sheet.png",
+      "overlay_dir": "D:\\IndicSyntheticSceneText\\previews\\scene_difficulty_seed_20261029\\overlays\\D2_lighting",
+      "passed": true
+    },
+    "D2_blur": {
+      "sample_count": 12,
+      "language_counts": {
+        "bengali": 3,
+        "gujarati": 3,
+        "hindi": 3,
+        "marathi": 3
+      },
+      "visibility_status_counts": {
+        "visible": 26
+      },
+      "image_dir": "D:\\IndicSyntheticSceneText\\data\\generated\\scene_difficulty_seed_20261029\\D2_blur\\images",
+      "annotation_dir": "D:\\IndicSyntheticSceneText\\data\\generated\\scene_difficulty_seed_20261029\\D2_blur\\annotations",
+      "contact_sheet": "D:\\IndicSyntheticSceneText\\previews\\scene_difficulty_seed_20261029\\D2_blur_contact_sheet.png",
+      "overlay_dir": "D:\\IndicSyntheticSceneText\\previews\\scene_difficulty_seed_20261029\\overlays\\D2_blur",
+      "passed": true
+    },
+    "D2_occlusion": {
+      "sample_count": 12,
+      "language_counts": {
+        "bengali": 3,
+        "gujarati": 3,
+        "hindi": 3,
+        "marathi": 3
+      },
+      "visibility_status_counts": {
+        "fully_occluded": 6,
+        "partially_occluded": 8,
+        "visible": 12
+      },
+      "image_dir": "D:\\IndicSyntheticSceneText\\data\\generated\\scene_difficulty_seed_20261029\\D2_occlusion\\images",
+      "annotation_dir": "D:\\IndicSyntheticSceneText\\data\\generated\\scene_difficulty_seed_20261029\\D2_occlusion\\annotations",
+      "contact_sheet": "D:\\IndicSyntheticSceneText\\previews\\scene_difficulty_seed_20261029\\D2_occlusion_contact_sheet.png",
+      "overlay_dir": "D:\\IndicSyntheticSceneText\\previews\\scene_difficulty_seed_20261029\\overlays\\D2_occlusion",
+      "passed": true
+    }
+  },
+  "validation_reports": {
+    "D0_clean": {
+      "passed": true,
+      "image_count": 12,
+      "annotation_count": 12,
+      "errors": []
+    },
+    "D2_distance": {
+      "passed": true,
+      "image_count": 12,
+      "annotation_count": 12,
+      "errors": []
+    },
+    "D2_perspective": {
+      "passed": true,
+      "image_count": 12,
+      "annotation_count": 12,
+      "errors": []
+    },
+    "D2_lighting": {
+      "passed": true,
+      "image_count": 12,
+      "annotation_count": 12,
+      "errors": []
+    },
+    "D2_blur": {
+      "passed": true,
+      "image_count": 12,
+      "annotation_count": 12,
+      "errors": []
+    },
+    "D2_occlusion": {
+      "passed": true,
+      "image_count": 12,
+      "annotation_count": 12,
+      "errors": []
+    }
+  },
+  "passed": true
+}
