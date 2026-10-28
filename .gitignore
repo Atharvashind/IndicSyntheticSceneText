@@ -15,6 +15,9 @@ venv/
 *.jpg
 *.jpeg
 
+# Downloaded font archives (the extracted, licensed font files are tracked)
+assets/fonts/*/*.zip
+
 # Local tooling
 .DS_Store
 *.log
