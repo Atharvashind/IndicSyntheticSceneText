@@ -18,6 +18,91 @@
     "gujarati": "assets/fonts/gujarati/NotoSansGujarati-Regular.ttf",
     "bengali": "assets/fonts/bengali/NotoSansBengali-Regular.ttf"
   },
+  "font_registry": {
+    "fonts": [
+      {
+        "id": "noto-devanagari-regular",
+        "path": "assets/fonts/devanagari/NotoSansDevanagari-Regular.ttf",
+        "target_languages": ["marathi", "hindi"],
+        "license": "SIL Open Font License 1.1",
+        "license_status": "verified",
+        "license_file": "assets/fonts/devanagari/OFL.txt",
+        "provenance": "Local Google Fonts Noto Sans Devanagari archive; matching OFL text is stored beside the font."
+      },
+      {
+        "id": "noto-devanagari-bold",
+        "path": "assets/fonts/devanagari/NotoSansDevanagari-Bold.ttf",
+        "target_languages": ["marathi", "hindi"],
+        "license": "SIL Open Font License 1.1",
+        "license_status": "verified",
+        "license_file": "assets/fonts/devanagari/OFL.txt",
+        "provenance": "Static Bold file extracted from the locally stored Google Fonts Noto Sans Devanagari archive; matching OFL text is stored beside the font."
+      },
+      {
+        "id": "noto-gujarati-regular",
+        "path": "assets/fonts/gujarati/NotoSansGujarati-Regular.ttf",
+        "target_languages": ["gujarati"],
+        "license": "SIL Open Font License 1.1",
+        "license_status": "verified",
+        "license_file": "assets/fonts/gujarati/OFL.txt",
+        "provenance": "Local Google Fonts Noto Sans Gujarati archive; matching OFL text is stored beside the font."
+      },
+      {
+        "id": "noto-gujarati-bold",
+        "path": "assets/fonts/gujarati/NotoSansGujarati-Bold.ttf",
+        "target_languages": ["gujarati"],
+        "license": "SIL Open Font License 1.1",
+        "license_status": "verified",
+        "license_file": "assets/fonts/gujarati/OFL.txt",
+        "provenance": "Static Bold file extracted from the locally stored Google Fonts Noto Sans Gujarati archive; matching OFL text is stored beside the font."
+      },
+      {
+        "id": "noto-bengali-regular",
+        "path": "assets/fonts/bengali/NotoSansBengali-Regular.ttf",
+        "target_languages": ["bengali"],
+        "license": "SIL Open Font License 1.1",
+        "license_status": "verified",
+        "license_file": "assets/fonts/bengali/OFL.txt",
+        "provenance": "Local Google Fonts Noto Sans Bengali archive; matching OFL text is stored beside the font."
+      },
+      {
+        "id": "noto-bengali-bold",
+        "path": "assets/fonts/bengali/NotoSansBengali-Bold.ttf",
+        "target_languages": ["bengali"],
+        "license": "SIL Open Font License 1.1",
+        "license_status": "verified",
+        "license_file": "assets/fonts/bengali/OFL.txt",
+        "provenance": "Static Bold file extracted from the locally stored Google Fonts Noto Sans Bengali archive; matching OFL text is stored beside the font."
+      },
+      {
+        "id": "local-annapurna-bold-unverified",
+        "path": "assets/fonts/devanagari/Annapurna Bold.ttf",
+        "target_languages": ["marathi", "hindi"],
+        "license": "Unknown",
+        "license_status": "unverified",
+        "license_file": null,
+        "provenance": "User-provided local file; source and redistribution terms have not been verified."
+      },
+      {
+        "id": "local-chandra-head-unverified",
+        "path": "assets/fonts/devanagari/Chandra Head Regular.ttf",
+        "target_languages": ["marathi", "hindi"],
+        "license": "Unknown",
+        "license_status": "unverified",
+        "license_file": null,
+        "provenance": "User-provided local file; source and redistribution terms have not been verified."
+      },
+      {
+        "id": "local-kirati-unverified",
+        "path": "assets/fonts/devanagari/Kirati Regular.ttf",
+        "target_languages": ["marathi", "hindi"],
+        "license": "Unknown",
+        "license_status": "unverified",
+        "license_file": null,
+        "provenance": "User-provided local file; source and redistribution terms have not been verified."
+      }
+    ]
+  },
   "default_render": {
     "font_size": 64,
     "foreground_color": [0, 0, 0],
@@ -128,6 +213,8 @@
     "alignments": ["center", "left", "right"],
     "outer_padding": 42,
     "outline_width": 0,
+    "shadow_offset": [0, 0],
+    "minimum_text_contrast_ratio": 4.5,
     "logo_colors": [[179, 91, 48], [35, 112, 93], [162, 68, 87], [42, 87, 150]],
     "storefront_scene": {
       "scene_sizes": [[1500, 1100], [1600, 1150]],
@@ -162,5 +249,33 @@
         "D2_occlusion"
       ]
     }
+  },
+  "batch_generation": {
+    "default_sample_count": 1000,
+    "scene_categories": ["shopfront", "outdoor_hoarding"],
+    "content_category_by_scene": {
+      "shopfront": "shop_board",
+      "outdoor_hoarding": "advertising_hoarding"
+    },
+    "font_selection_strategy": "least-used validated font within each language",
+    "decorative_effects": {
+      "outline_width_px": [0],
+      "shadow_offset_px": [[0, 0]]
+    },
+    "balance_dimensions": ["language", "scene_category", "difficulty_profile", "font"],
+    "background_policy": "Use approved manifest assets when supplied; otherwise label newly composed scenes procedural and report the photo/AI background shortfall."
+  },
+  "background_pipeline": {
+    "asset_directory": "assets/backgrounds",
+    "manifest_path": "assets/backgrounds/manifest.json",
+    "minimum_image_width": 800,
+    "minimum_image_height": 600,
+    "minimum_surface_width": 360,
+    "minimum_surface_height": 120,
+    "require_verified_license": true,
+    "require_manual_review_approved": true,
+    "pilot_scene_count": 24,
+    "pilot_target_per_source_type": 12,
+    "pilot_target_per_scene_category": 12
   }
 }

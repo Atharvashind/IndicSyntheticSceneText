@@ -10,6 +10,8 @@ from PIL import Image
 from .content_engine import CATEGORY_NAMES, SUPPORTED_LANGUAGES
 from .text_renderer import render_multiline_text
 
+ROOT_DIR = Path(__file__).resolve().parents[1]
+
 SCRIPT_BY_LANGUAGE = {
     "marathi": "Devanagari",
     "hindi": "Devanagari",
@@ -62,6 +64,10 @@ def validate_annotation(annotation: dict, image_path: Path) -> List[str]:
         transcription = region.get("transcription")
         if not isinstance(transcription, str) or not transcription.strip():
             errors.append(f"{prefix}.transcription must be a non-empty string.")
+        elif any(0xD800 <= ord(char) <= 0xDFFF for char in transcription):
+            errors.append(f"{prefix}.transcription contains an invalid Unicode surrogate.")
+        elif any(ord(char) < 32 and char not in {"\n", "\t"} for char in transcription):
+            errors.append(f"{prefix}.transcription contains an unsupported control character.")
         if region.get("language") not in SUPPORTED_LANGUAGES:
             errors.append(f"{prefix} has an unsupported language label.")
         elif region.get("script") != SCRIPT_BY_LANGUAGE[region["language"]]:
@@ -140,6 +146,31 @@ def validate_annotation(annotation: dict, image_path: Path) -> List[str]:
 
         if not isinstance(region.get("font"), dict) or not region["font"].get("family"):
             errors.append(f"{prefix}.font must include its family.")
+        elif region["font"].get("id") is not None:
+            font = region["font"]
+            if (
+                not isinstance(font.get("path"), str)
+                or not font["path"]
+                or not isinstance(font.get("style"), str)
+                or not font["style"]
+                or not isinstance(font.get("weight"), int)
+            ):
+                errors.append(f"{prefix}.font registry metadata is incomplete.")
+
+    background_source_type = annotation.get("background_source_type")
+    if background_source_type is not None and background_source_type not in {
+        "procedural_illustration",
+        "real_photo",
+        "ai_generated",
+    }:
+        errors.append("background_source_type is not a supported provenance label.")
+    composition = annotation.get("background_composition")
+    if (
+        isinstance(composition, dict)
+        and background_source_type is not None
+        and background_source_type != composition.get("source_type")
+    ):
+        errors.append("background_source_type does not match background_composition.source_type.")
 
     if sorted(reading_orders) != list(range(len(regions))):
         errors.append("reading_order values must be unique and contiguous from zero.")
@@ -283,6 +314,13 @@ def validate_transformed_geometry(parent: dict, annotation: dict) -> List[str]:
     }
     if parent_regions.keys() != variant_regions.keys():
         return errors + ["Transformed sample text-region IDs differ from its parent."]
+    for region_id, parent_region in parent_regions.items():
+        transformed_region = variant_regions[region_id]
+        for field in ("transcription", "language", "script", "reading_order"):
+            if transformed_region.get(field) != parent_region.get(field):
+                errors.append(
+                    f"Transformed text region {region_id!r} changed its {field}."
+                )
 
     polygons = {
         region_id: [[float(point[0]), float(point[1])] for point in region["polygon"]]
@@ -441,6 +479,9 @@ def validate_rendered_geometry(annotation: dict) -> List[str]:
             errors.append(f"text_regions[{index}] has no corresponding rendering layout.")
             continue
         try:
+            font_path = region["font"]["path"]
+            if not Path(font_path).is_absolute():
+                font_path = str(ROOT_DIR / font_path)
             rendered = render_multiline_text(
                 region["transcription"],
                 region["language"],
@@ -453,11 +494,14 @@ def validate_rendered_geometry(annotation: dict) -> List[str]:
                 line_spacing=layout["line_spacing"],
                 align=layout.get("alignment", generation["alignment"]),
                 shadow_offset=(0, 0),
+                font_path=font_path,
             )
         except (KeyError, TypeError, ValueError, OSError) as error:
             errors.append(f"text_regions[{index}] could not be rerendered: {error}")
             continue
 
+        if rendered["text"] != region["transcription"]:
+            errors.append(f"text_regions[{index}] transcription changed during rendering.")
         ink = rendered["ink_bbox"]
         origin_x, origin_y = layout["canvas_x"], layout["canvas_y"]
         expected = {

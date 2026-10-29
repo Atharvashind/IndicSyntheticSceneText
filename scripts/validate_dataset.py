@@ -24,6 +24,12 @@ def main() -> int:
     )
     print(f"Languages: {report['language_counts']}")
     print(f"Categories: {report['category_counts']}")
+    print(f"Background sources: {report['background_source_counts']}")
+    print(f"Background provenance labels: {report['background_source_type_counts']}")
+    print(f"Background scene categories: {report['background_scene_category_counts']}")
+    print(f"Difficulty profiles: {report['difficulty_profile_counts']}")
+    print(f"Fonts: {report['font_counts']}")
+    print(f"Font/script coverage: {report['font_script_counts']}")
     if report["passed"]:
         print("Validation passed.")
     else:

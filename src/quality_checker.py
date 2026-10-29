@@ -7,6 +7,10 @@ from typing import List
 
 from PIL import Image, ImageChops
 
+from .background_composer import (
+    validate_background_composition,
+    validate_transformed_surface,
+)
 from .annotation_exporter import (
     validate_annotation,
     validate_rendered_geometry,
@@ -58,6 +62,9 @@ def validate_dataset(image_dir: Path, annotation_dir: Path) -> dict:
             errors.append({"file": annotation_path.name, "error": error})
         for error in validate_rendered_geometry(record):
             errors.append({"file": annotation_path.name, "error": error})
+        if record.get("background_composition") is not None:
+            for error in validate_background_composition(record):
+                errors.append({"file": annotation_path.name, "error": error})
         if record.get("scene_difficulty") is not None:
             for error in validate_visibility_metadata(record):
                 errors.append({"file": annotation_path.name, "error": error})
@@ -77,8 +84,18 @@ def validate_dataset(image_dir: Path, annotation_dir: Path) -> dict:
                 try:
                     with parent_path.open("r", encoding="utf-8") as handle:
                         parent_record = json.load(handle)
+                    if parent.get("sample_id") != parent_record.get("sample_id"):
+                        errors.append(
+                            {
+                                "file": annotation_path.name,
+                                "error": "Parent annotation sample_id does not match the recorded parent link.",
+                            }
+                        )
                     for error in validate_transformed_geometry(parent_record, record):
                         errors.append({"file": annotation_path.name, "error": error})
+                    if record.get("background_composition") is not None:
+                        for error in validate_transformed_surface(parent_record, record):
+                            errors.append({"file": annotation_path.name, "error": error})
                 except (OSError, json.JSONDecodeError) as error:
                     errors.append(
                         {"file": annotation_path.name, "error": f"Cannot read parent annotation: {error}"}
@@ -121,6 +138,41 @@ def validate_dataset(image_dir: Path, annotation_dir: Path) -> dict:
     category_counts = Counter(
         record.get("category", "unknown") for record in records
     )
+    background_counts = Counter(
+        record.get("background_composition", {}).get("source_type", "unknown")
+        for record in records
+        if record.get("background_composition") is not None
+    )
+    scene_category_counts = Counter(
+        record.get("background_composition", {}).get("scene_category", "unknown")
+        for record in records
+        if record.get("background_composition") is not None
+    )
+    difficulty_counts = Counter(
+        record.get("scene_difficulty", {}).get("profile", "unknown")
+        for record in records
+        if record.get("scene_difficulty") is not None
+    )
+    font_counts = Counter(
+        region.get("font", {}).get("id", region.get("font", {}).get("family", "unknown"))
+        for record in records
+        for region in record.get("text_regions", [])
+    )
+    font_script_counts = Counter(
+        (
+            region.get("font", {}).get("id", region.get("font", {}).get("family", "unknown")),
+            region.get("script", "unknown"),
+        )
+        for record in records
+        for region in record.get("text_regions", [])
+    )
+    background_source_type_counts = Counter(
+        record.get("background_source_type")
+        or record.get("background_composition", {}).get("source_type", "unknown")
+        for record in records
+        if record.get("background_source_type") is not None
+        or record.get("background_composition") is not None
+    )
     return {
         "schema_version": "1.0",
         "image_dir": str(image_dir),
@@ -130,6 +182,15 @@ def validate_dataset(image_dir: Path, annotation_dir: Path) -> dict:
         "sample_id_count": len(seen_sample_ids),
         "language_counts": dict(sorted(language_counts.items())),
         "category_counts": dict(sorted(category_counts.items())),
+        "background_source_counts": dict(sorted(background_counts.items())),
+        "background_source_type_counts": dict(sorted(background_source_type_counts.items())),
+        "background_scene_category_counts": dict(sorted(scene_category_counts.items())),
+        "difficulty_profile_counts": dict(sorted(difficulty_counts.items())),
+        "font_counts": dict(sorted(font_counts.items())),
+        "font_script_counts": {
+            f"{font_id}|{script}": count
+            for (font_id, script), count in sorted(font_script_counts.items())
+        },
         "passed": not errors,
         "errors": errors,
     }

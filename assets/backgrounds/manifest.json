@@ -1,0 +1,5 @@
+{
+  "schema_version": "1.0",
+  "coordinate_convention": "pixel_edges; top-left origin; x right; y down; polygon order top-left, top-right, bottom-right, bottom-left",
+  "assets": []
+}

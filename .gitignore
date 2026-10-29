@@ -18,6 +18,17 @@ venv/
 # Downloaded font archives (the extracted, licensed font files are tracked)
 assets/fonts/*/*.zip
 
+# User-supplied background assets are local inputs and are not tracked by default
+/assets/backgrounds/real_photos/
+/assets/backgrounds/ai_generated/
+/reference images/
+
+# Keep the local Hugging Face dataset staging payload out of the project repository
+/hf_upload/indic-synthetic-scene-text-1000/images/
+/hf_upload/indic-synthetic-scene-text-1000/annotations/
+/hf_upload/indic-synthetic-scene-text-1000/metadata/
+/hf_upload/indic-synthetic-scene-text-1000/validation_reports/
+
 # Local tooling
 .DS_Store
 *.log

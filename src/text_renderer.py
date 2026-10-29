@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from typing import List, Optional, Sequence, Tuple
+from typing import List, Optional, Sequence, Tuple, Union
 
 import freetype
 import uharfbuzz as hb
@@ -79,16 +79,17 @@ def _validate_font_coverage(text: str, font_path: str) -> None:
         raise ValueError(f"Font '{font_path}' does not cover required characters: {codepoints}")
 
 
-def _font_names(font_path: str) -> Tuple[str, str]:
+def _font_names(font_path: str) -> Tuple[str, str, int]:
     font = TTFont(font_path, lazy=True)
     try:
         family = font["name"].getDebugName(1)
         style = font["name"].getDebugName(2)
+        weight = font["OS/2"].usWeightClass
     finally:
         font.close()
     if not family or not style:
         raise ValueError(f"Font '{font_path}' does not contain family and style metadata.")
-    return family, style
+    return family, style, weight
 
 
 def _shape_line(text: str, language: str, font_data: bytes, font_size: int) -> Tuple[List[int], List[object], float]:
@@ -227,6 +228,16 @@ def _make_text_mask(
             glyph_x = round(pen_x + position.x_offset / 64 + bitmap_left)
             glyph_y = round(baseline - position.y_offset / 64 - bitmap_top)
             if glyph_mask.width and glyph_mask.height:
+                if (
+                    glyph_x < 0
+                    or glyph_y < 0
+                    or glyph_x + glyph_mask.width > width
+                    or glyph_y + glyph_mask.height > height
+                ):
+                    raise ValueError(
+                        "A rendered glyph extends outside the text canvas; "
+                        "increase its size or adjust the layout."
+                    )
                 mask.paste(glyph_mask, (glyph_x, glyph_y), glyph_mask)
             pen_x += position.x_advance / 64
             glyph_count += 1
@@ -258,9 +269,10 @@ def render_multiline_text(
     outline_color: Tuple[int, int, int] = (0, 0, 0),
     shadow_offset: Tuple[int, int] = (4, 4),
     shadow_color: Tuple[int, int, int, int] = (0, 0, 0, 120),
+    font_path: Optional[Union[str, Path]] = None,
 ) -> dict:
-    text = str(text).strip()
-    if not text:
+    text = str(text)
+    if not text.strip():
         raise ValueError("Text must not be empty when rendering a region.")
     if language not in LANGUAGE_SHAPING:
         raise ValueError(f"Unsupported language '{language}'.")
@@ -269,17 +281,23 @@ def render_multiline_text(
     if line_spacing <= 0 or outline_width < 0:
         raise ValueError("line_spacing must be positive and outline_width cannot be negative.")
 
-    font_path = resolve_font_path(language)
-    _validate_font_coverage(text, font_path)
-    font_family, font_style = _font_names(font_path)
-    font_data = Path(font_path).read_bytes()
+    if font_path is None:
+        selected_font_path = resolve_font_path(language)
+    else:
+        requested_path = Path(font_path)
+        if not requested_path.is_absolute():
+            requested_path = ROOT_DIR / requested_path
+        selected_font_path = resolve_font_path(language, [str(requested_path)])
+    _validate_font_coverage(text, selected_font_path)
+    font_family, font_style, font_weight = _font_names(selected_font_path)
+    font_data = Path(selected_font_path).read_bytes()
     max_text_width = max(width - 2 * padding, 1)
     lines = _wrap_lines(text, language, font_data, font_size, max_text_width)
     mask, text_boxes, glyph_count = _make_text_mask(
         lines,
         language,
         font_data,
-        font_path,
+        selected_font_path,
         font_size,
         (width, height),
         padding,
@@ -309,9 +327,10 @@ def render_multiline_text(
         "text_mask": mask,
         "text": text,
         "language": language,
-        "font_path": font_path,
+        "font_path": selected_font_path,
         "font_family": font_family,
         "font_style": font_style,
+        "font_weight": font_weight,
         "font_size": font_size,
         "shaping_engine": f"HarfBuzz {hb.version_string()} + FreeType",
         "glyph_count": glyph_count,

@@ -26,6 +26,28 @@ def _choose(rng: random.Random, values: Sequence):
     return rng.choice(values)
 
 
+def _contrast_ratio(
+    first: Tuple[int, int, int],
+    second: Tuple[int, int, int],
+) -> float:
+    def relative_luminance(color: Tuple[int, int, int]) -> float:
+        channels = []
+        for value in color:
+            component = value / 255
+            channels.append(
+                component / 12.92
+                if component <= 0.04045
+                else ((component + 0.055) / 1.055) ** 2.4
+            )
+        return 0.2126 * channels[0] + 0.7152 * channels[1] + 0.0722 * channels[2]
+
+    lighter, darker = sorted(
+        (relative_luminance(first), relative_luminance(second)),
+        reverse=True,
+    )
+    return round((lighter + 0.05) / (darker + 0.05), 3)
+
+
 def _draw_board_background(
     size: Tuple[int, int],
     background_color: Tuple[int, int, int],
@@ -122,6 +144,10 @@ def _make_region_annotation(
     canvas_origin: Tuple[int, int],
     alignment: str,
     foreground: Tuple[int, int, int],
+    font_id: Optional[str],
+    font_weight: Optional[int],
+    outline_width: int,
+    shadow_offset: Tuple[int, int],
 ) -> dict:
     ink_bbox = render_result["ink_bbox"]
     origin_x, origin_y = canvas_origin
@@ -134,6 +160,10 @@ def _make_region_annotation(
         font_record = font_path.relative_to(ROOT_DIR).as_posix()
     except ValueError:
         font_record = font_path.name
+    resolved_font_id = font_id or (
+        f"{render_result['font_family'].lower().replace(' ', '-')}-"
+        f"{render_result['font_style'].lower().replace(' ', '-')}"
+    )
 
     return {
         "region_id": region_id,
@@ -154,17 +184,19 @@ def _make_region_annotation(
             [x_min, y_max],
         ],
         "font": {
+            "id": resolved_font_id,
             "family": render_result["font_family"],
             "path": font_record,
             "style": render_result["font_style"],
+            "weight": font_weight or render_result["font_weight"],
             "size_px": render_result["font_size"],
         },
         "rendering": {
             "shaping_engine": render_result["shaping_engine"],
             "alignment": alignment,
             "foreground_rgb": list(foreground),
-            "outline_width_px": 0,
-            "shadow_offset_px": [0, 0],
+            "outline_width_px": outline_width,
+            "shadow_offset_px": list(shadow_offset),
         },
     }
 
@@ -175,17 +207,35 @@ def _render_shop_board(
     sample_id: str,
     config: dict,
     layout_id: str,
+    content_category: str = "shop_board",
+    font_path: Optional[str] = None,
+    font_id: Optional[str] = None,
+    font_weight: Optional[int] = None,
 ) -> Tuple[Image.Image, dict]:
     generation = config["shop_board_generation"]
     rng = random.Random(sample_seed)
     if layout_id not in SHOP_BOARD_LAYOUTS:
         raise ValueError(f"Unknown shop-board layout '{layout_id}'.")
+    if content_category not in {"shop_board", "advertising_hoarding"}:
+        raise ValueError(f"Unsupported signboard content category '{content_category}'.")
     width, height = _choose(rng, generation["board_sizes"])
     background_color = tuple(_choose(rng, generation["background_colors"]))
     border_color = tuple(_choose(rng, generation["border_colors"]))
-    foreground = tuple(_choose(rng, generation["text_colors"]))
+    minimum_contrast = float(generation.get("minimum_text_contrast_ratio", 1.0))
+    eligible_text_colors = [
+        tuple(color)
+        for color in generation["text_colors"]
+        if _contrast_ratio(tuple(color), background_color) >= minimum_contrast
+    ]
+    if not eligible_text_colors:
+        raise ValueError(
+            "No configured text color meets the minimum contrast ratio for the selected board background."
+        )
+    foreground = tuple(_choose(rng, eligible_text_colors))
     border_width = int(_choose(rng, generation["border_widths"]))
     alignment = _choose(rng, generation["alignments"])
+    outline_width = int(generation["outline_width"])
+    shadow_offset = tuple(generation.get("shadow_offset", [0, 0]))
     outer_padding = int(generation["outer_padding"])
     logo_record = None
 
@@ -215,13 +265,37 @@ def _render_shop_board(
         ],
         "multiline_hierarchy": [
             ("multiline_shop_name", "multiline_shop_name", round(height * 0.12), round(height * 0.49), [42, 48, 54], "main"),
-            ("service_list", "service_list", round(height * 0.66), round(height * 0.20), generation["description_font_sizes"], "secondary"),
+            ("service_list", "service_list", round(height * 0.62), round(height * 0.26), generation["description_font_sizes"], "secondary"),
         ],
         "logo_business_sign": [
             ("shop_name", "shop_name", round(height * 0.24), round(height * 0.30), generation["font_sizes"], "main"),
             ("storefront_description", "storefront_description", round(height * 0.59), round(height * 0.18), generation["description_font_sizes"], "secondary"),
         ],
     }
+    if content_category == "advertising_hoarding":
+        specs_by_layout = {
+            "centered_business_subtitle": [
+                ("headline", "advertising_message", round(height * 0.16), round(height * 0.37), generation["font_sizes"], "main"),
+                ("offer", "offer", round(height * 0.61), round(height * 0.20), generation["description_font_sizes"], "secondary"),
+            ],
+            "left_name_services": [
+                ("headline", "advertising_message", round(height * 0.13), round(height * 0.32), generation["font_sizes"], "main"),
+                ("offer", "offer", round(height * 0.48), round(height * 0.36), generation["description_font_sizes"], "secondary"),
+            ],
+            "headline_contact_details": [
+                ("headline", "advertising_message", round(height * 0.13), round(height * 0.35), generation["font_sizes"], "main"),
+                ("offer", "offer", round(height * 0.52), round(height * 0.17), generation["description_font_sizes"], "secondary"),
+                ("details", "offer", round(height * 0.72), round(height * 0.13), [22, 24, 26, 28], "tertiary"),
+            ],
+            "multiline_hierarchy": [
+                ("headline", "advertising_message", round(height * 0.12), round(height * 0.49), [42, 48, 54], "main"),
+                ("offer", "offer", round(height * 0.62), round(height * 0.26), generation["description_font_sizes"], "secondary"),
+            ],
+            "logo_business_sign": [
+                ("headline", "advertising_message", round(height * 0.24), round(height * 0.30), generation["font_sizes"], "main"),
+                ("offer", "offer", round(height * 0.59), round(height * 0.18), generation["description_font_sizes"], "secondary"),
+            ],
+        }
     specifications = specs_by_layout[layout_id]
     logo_reserve = round(width * 0.21) if layout_id == "logo_business_sign" else 0
     region_x = outer_padding + logo_reserve
@@ -248,7 +322,7 @@ def _render_shop_board(
         text_seed = rng.getrandbits(64)
         transcription = generate_text(
             language,
-            "shop_board",
+            content_category,
             seed=text_seed,
             content_type=content_type,
         )
@@ -265,8 +339,9 @@ def _render_shop_board(
             padding=8 if hierarchy == "tertiary" else 10,
             line_spacing=1.12,
             align=region_alignment,
-            outline_width=0,
-            shadow_offset=(0, 0),
+            outline_width=outline_width,
+            shadow_offset=shadow_offset,
+            font_path=font_path,
         )
         region_origin = (region_x, region_y)
         board.alpha_composite(render_result["image"], dest=region_origin)
@@ -280,6 +355,10 @@ def _render_shop_board(
                 canvas_origin=region_origin,
                 alignment=region_alignment,
                 foreground=foreground,
+                font_id=font_id,
+                font_weight=font_weight,
+                outline_width=outline_width,
+                shadow_offset=shadow_offset,
             )
         )
         layout_records.append(
@@ -306,7 +385,7 @@ def _render_shop_board(
         "image_height": height,
         "language": language,
         "script": SCRIPT_BY_LANGUAGE[language],
-        "category": "shop_board",
+        "category": content_category,
         "random_seed": sample_seed,
         "coordinate_convention": {
             "origin": "top_left",
@@ -317,13 +396,26 @@ def _render_shop_board(
         "text_regions": text_regions,
         "generation_parameters": {
             "template_id": layout_id,
+            "content_category": content_category,
+            "font_id": text_regions[0]["font"]["id"],
+            "font_weight": text_regions[0]["font"]["weight"],
+            "font_path": text_regions[0]["font"]["path"],
             "background_rgb": list(background_color),
             "border_rgb": list(border_color),
             "text_rgb": list(foreground),
+            "text_background_contrast_ratio": _contrast_ratio(
+                foreground,
+                background_color,
+            ),
+            "minimum_text_contrast_ratio": minimum_contrast,
             "border_width_px": border_width,
             "outer_padding_px": outer_padding,
             "alignment": alignment,
             "logo": logo_record,
+            "rendering_effects": {
+                "outline_width_px": outline_width,
+                "shadow_offset_px": list(shadow_offset),
+            },
             "region_layout": layout_records,
         },
         "validation": {
@@ -340,10 +432,24 @@ def render_shop_board_sample(
     sample_seed: int,
     sample_id: str,
     layout_id: str,
+    content_category: str = "shop_board",
+    font_path: Optional[str] = None,
+    font_id: Optional[str] = None,
+    font_weight: Optional[int] = None,
 ) -> Tuple[Image.Image, dict]:
     if language not in SUPPORTED_LANGUAGES:
         raise ValueError(f"Unsupported language '{language}'.")
-    return _render_shop_board(language, sample_seed, sample_id, load_config(), layout_id)
+    return _render_shop_board(
+        language,
+        sample_seed,
+        sample_id,
+        load_config(),
+        layout_id,
+        content_category,
+        font_path,
+        font_id,
+        font_weight,
+    )
 
 
 def _make_contact_sheet(
