@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "seed": 20261030,
+  "photorealistic": false,
+  "description": "Reference-inspired synthetic dataset; procedural illustrations are not photorealistic.",
+  "generated_scene_count": 1000,
+  "requested_scene_count": 1000,
+  "coverage": {
+    "language_counts": {
+      "bengali": 250,
+      "gujarati": 250,
+      "hindi": 250,
+      "marathi": 250
+    },
+    "scene_category_counts": {
+      "outdoor_hoarding": 500,
+      "shopfront": 500
+    },
+    "sign_category_counts": {
+      "advertising_hoarding": 500,
+      "shop_board": 500
+    },
+    "difficulty_profile_counts": {
+      "D0_clean": 167,
+      "D2_blur": 166,
+      "D2_distance": 167,
+      "D2_lighting": 167,
+      "D2_occlusion": 166,
+      "D2_perspective": 167
+    },
+    "font_counts": {
+      "noto-bengali-bold": 125,
+      "noto-bengali-regular": 125,
+      "noto-devanagari-bold": 250,
+      "noto-devanagari-regular": 250,
+      "noto-gujarati-bold": 125,
+      "noto-gujarati-regular": 125
+    },
+    "font_counts_by_language": {
+      "marathi": {
+        "noto-devanagari-bold": 125,
+        "noto-devanagari-regular": 125
+      },
+      "hindi": {
+        "noto-devanagari-bold": 125,
+        "noto-devanagari-regular": 125
+      },
+      "gujarati": {
+        "noto-gujarati-bold": 125,
+        "noto-gujarati-regular": 125
+      },
+      "bengali": {
+        "noto-bengali-bold": 125,
+        "noto-bengali-regular": 125
+      }
+    },
+    "background_source_counts": {
+      "procedural_illustration": 1000
+    }
+  },
+  "expected_coverage": {
+    "language_counts": {
+      "bengali": 250,
+      "gujarati": 250,
+      "hindi": 250,
+      "marathi": 250
+    },
+    "scene_category_counts": {
+      "outdoor_hoarding": 500,
+      "shopfront": 500
+    },
+    "difficulty_profile_counts": {
+      "D0_clean": 167,
+      "D2_blur": 166,
+      "D2_distance": 167,
+      "D2_lighting": 167,
+      "D2_occlusion": 166,
+      "D2_perspective": 167
+    },
+    "font_counts": {
+      "noto-bengali-bold": 125,
+      "noto-bengali-regular": 125,
+      "noto-devanagari-bold": 250,
+      "noto-devanagari-regular": 250,
+      "noto-gujarati-bold": 125,
+      "noto-gujarati-regular": 125
+    }
+  },
+  "coverage_balanced": true,
+  "font_coverage_balanced_within_language": true,
+  "validation_passed": true,
+  "complete": true,
+  "font_validation_report": "D:\\IndicSyntheticSceneText\\previews\\font_validation_seed_20261029\\font_validation_report.json",
+  "background_assets": {
+    "eligible_asset_count": 0,
+    "eligible_source_counts": {},
+    "excluded_asset_count": 0,
+    "excluded_assets": [],
+    "warnings": [],
+    "selected_source_counts": {
+      "real_photo": 0,
+      "ai_generated": 0,
+      "procedural_illustration": 1000
+    },
+    "nonprocedural_background_shortfall": 1000,
+    "procedural_fallback_used": true
+  },
+  "failed_samples": [],
+  "contact_sheets": {
+    "by_language": {
+      "marathi": "by_language/marathi.png",
+      "hindi": "by_language/hindi.png",
+      "gujarati": "by_language/gujarati.png",
+      "bengali": "by_language/bengali.png"
+    },
+    "by_font": {
+      "noto-bengali-bold": "by_font/noto-bengali-bold.png",
+      "noto-bengali-regular": "by_font/noto-bengali-regular.png",
+      "noto-devanagari-bold": "by_font/noto-devanagari-bold.png",
+      "noto-devanagari-regular": "by_font/noto-devanagari-regular.png",
+      "noto-gujarati-bold": "by_font/noto-gujarati-bold.png",
+      "noto-gujarati-regular": "by_font/noto-gujarati-regular.png"
+    },
+    "by_difficulty_profile": {
+      "D0_clean": "D0_clean_contact_sheet.png",
+      "D2_distance": "D2_distance_contact_sheet.png",
+      "D2_perspective": "D2_perspective_contact_sheet.png",
+      "D2_lighting": "D2_lighting_contact_sheet.png",
+      "D2_blur": "D2_blur_contact_sheet.png",
+      "D2_occlusion": "D2_occlusion_contact_sheet.png"
+    }
+  },
+  "profile_validation": {
+    "D0_clean": {
+      "passed": true,
+      "image_count": 167,
+      "annotation_count": 167,
+      "errors": []
+    },
+    "D2_distance": {
+      "passed": true,
+      "image_count": 167,
+      "annotation_count": 167,
+      "errors": []
+    },
+    "D2_perspective": {
+      "passed": true,
+      "image_count": 167,
+      "annotation_count": 167,
+      "errors": []
+    },
+    "D2_lighting": {
+      "passed": true,
+      "image_count": 167,
+      "annotation_count": 167,
+      "errors": []
+    },
+    "D2_blur": {
+      "passed": true,
+      "image_count": 166,
+      "annotation_count": 166,
+      "errors": []
+    },
+    "D2_occlusion": {
+      "passed": true,
+      "image_count": 166,
+      "annotation_count": 166,
+      "errors": []
+    }
+  },
+  "visual_review_required": true,
+  "limitations": [
+    "Scene backgrounds are procedural 2D illustrations, not photorealistic.",
+    "Reference photos were not used as pixels or as annotation ground truth.",
+    "Visual inspection of the contact sheets remains necessary; automated geometry checks do not establish visual realism.",
+    "Occlusion visibility remains the configured bbox-area estimate, not pixel-accurate glyph visibility."
+  ]
+}

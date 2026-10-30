@@ -1,0 +1,35 @@
+{
+  "name": "indic-synthetic-scene-text-1000",
+  "schema_version": "1.0",
+  "seed": 20261030,
+  "primary_sample_count": 1000,
+  "primary_image_count": 1000,
+  "primary_annotation_count": 1000,
+  "supporting_parent_image_count": 1000,
+  "supporting_parent_annotation_count": 1000,
+  "supporting_board_layer_count": 1000,
+  "language_counts": {
+    "bengali": 250,
+    "gujarati": 250,
+    "hindi": 250,
+    "marathi": 250
+  },
+  "scene_category_counts": {
+    "outdoor_hoarding": 500,
+    "shopfront": 500
+  },
+  "difficulty_profile_counts": {
+    "D0_clean": 167,
+    "D2_blur": 166,
+    "D2_distance": 167,
+    "D2_lighting": 167,
+    "D2_occlusion": 166,
+    "D2_perspective": 167
+  },
+  "background_source_counts": {
+    "procedural_illustration": 1000
+  },
+  "photorealistic": false,
+  "licensing_status": "unresolved; repository should remain private until reviewed",
+  "annotation_format": "One UTF-8 JSON object per sample; exact transcription is in text_regions[].transcription."
+}

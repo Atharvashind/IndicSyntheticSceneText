@@ -1,0 +1,250 @@
+{
+  "seed": 42,
+  "split_sizes": {
+    "train": 700,
+    "validation": 150,
+    "test": 150
+  },
+  "distributions": {
+    "train": {
+      "records": 700,
+      "language": {
+        "bengali": 176,
+        "gujarati": 174,
+        "hindi": 175,
+        "marathi": 175
+      },
+      "scene_category": {
+        "outdoor_hoarding": 349,
+        "shopfront": 351
+      },
+      "difficulty_profile": {
+        "D0_clean": 119,
+        "D2_blur": 114,
+        "D2_distance": 116,
+        "D2_lighting": 115,
+        "D2_occlusion": 118,
+        "D2_perspective": 118
+      },
+      "category": {
+        "advertising_hoarding": 349,
+        "shop_board": 351
+      }
+    },
+    "validation": {
+      "records": 150,
+      "language": {
+        "bengali": 38,
+        "gujarati": 38,
+        "hindi": 37,
+        "marathi": 37
+      },
+      "scene_category": {
+        "outdoor_hoarding": 78,
+        "shopfront": 72
+      },
+      "difficulty_profile": {
+        "D0_clean": 24,
+        "D2_blur": 26,
+        "D2_distance": 26,
+        "D2_lighting": 25,
+        "D2_occlusion": 24,
+        "D2_perspective": 25
+      },
+      "category": {
+        "advertising_hoarding": 78,
+        "shop_board": 72
+      }
+    },
+    "test": {
+      "records": 150,
+      "language": {
+        "bengali": 36,
+        "gujarati": 38,
+        "hindi": 38,
+        "marathi": 38
+      },
+      "scene_category": {
+        "outdoor_hoarding": 73,
+        "shopfront": 77
+      },
+      "difficulty_profile": {
+        "D0_clean": 24,
+        "D2_blur": 26,
+        "D2_distance": 25,
+        "D2_lighting": 27,
+        "D2_occlusion": 24,
+        "D2_perspective": 24
+      },
+      "category": {
+        "advertising_hoarding": 73,
+        "shop_board": 77
+      }
+    },
+    "joint_stratification": {
+      "train": {
+        "bengali|outdoor_hoarding|D0_clean": 15,
+        "bengali|outdoor_hoarding|D2_blur": 14,
+        "bengali|outdoor_hoarding|D2_distance": 14,
+        "bengali|outdoor_hoarding|D2_lighting": 14,
+        "bengali|outdoor_hoarding|D2_occlusion": 15,
+        "bengali|outdoor_hoarding|D2_perspective": 15,
+        "bengali|shopfront|D0_clean": 15,
+        "bengali|shopfront|D2_blur": 15,
+        "bengali|shopfront|D2_distance": 15,
+        "bengali|shopfront|D2_lighting": 15,
+        "bengali|shopfront|D2_occlusion": 14,
+        "bengali|shopfront|D2_perspective": 15,
+        "gujarati|outdoor_hoarding|D0_clean": 15,
+        "gujarati|outdoor_hoarding|D2_blur": 14,
+        "gujarati|outdoor_hoarding|D2_distance": 14,
+        "gujarati|outdoor_hoarding|D2_lighting": 14,
+        "gujarati|outdoor_hoarding|D2_occlusion": 15,
+        "gujarati|outdoor_hoarding|D2_perspective": 15,
+        "gujarati|shopfront|D0_clean": 15,
+        "gujarati|shopfront|D2_blur": 14,
+        "gujarati|shopfront|D2_distance": 14,
+        "gujarati|shopfront|D2_lighting": 15,
+        "gujarati|shopfront|D2_occlusion": 15,
+        "gujarati|shopfront|D2_perspective": 14,
+        "hindi|outdoor_hoarding|D0_clean": 15,
+        "hindi|outdoor_hoarding|D2_blur": 14,
+        "hindi|outdoor_hoarding|D2_distance": 14,
+        "hindi|outdoor_hoarding|D2_lighting": 14,
+        "hindi|outdoor_hoarding|D2_occlusion": 15,
+        "hindi|outdoor_hoarding|D2_perspective": 15,
+        "hindi|shopfront|D0_clean": 15,
+        "hindi|shopfront|D2_blur": 15,
+        "hindi|shopfront|D2_distance": 15,
+        "hindi|shopfront|D2_lighting": 14,
+        "hindi|shopfront|D2_occlusion": 14,
+        "hindi|shopfront|D2_perspective": 15,
+        "marathi|outdoor_hoarding|D0_clean": 15,
+        "marathi|outdoor_hoarding|D2_blur": 14,
+        "marathi|outdoor_hoarding|D2_distance": 15,
+        "marathi|outdoor_hoarding|D2_lighting": 15,
+        "marathi|outdoor_hoarding|D2_occlusion": 15,
+        "marathi|outdoor_hoarding|D2_perspective": 14,
+        "marathi|shopfront|D0_clean": 14,
+        "marathi|shopfront|D2_blur": 14,
+        "marathi|shopfront|D2_distance": 15,
+        "marathi|shopfront|D2_lighting": 14,
+        "marathi|shopfront|D2_occlusion": 15,
+        "marathi|shopfront|D2_perspective": 15
+      },
+      "validation": {
+        "bengali|outdoor_hoarding|D0_clean": 3,
+        "bengali|outdoor_hoarding|D2_blur": 4,
+        "bengali|outdoor_hoarding|D2_distance": 4,
+        "bengali|outdoor_hoarding|D2_lighting": 3,
+        "bengali|outdoor_hoarding|D2_occlusion": 3,
+        "bengali|outdoor_hoarding|D2_perspective": 3,
+        "bengali|shopfront|D0_clean": 3,
+        "bengali|shopfront|D2_blur": 3,
+        "bengali|shopfront|D2_distance": 3,
+        "bengali|shopfront|D2_lighting": 3,
+        "bengali|shopfront|D2_occlusion": 3,
+        "bengali|shopfront|D2_perspective": 3,
+        "gujarati|outdoor_hoarding|D0_clean": 3,
+        "gujarati|outdoor_hoarding|D2_blur": 3,
+        "gujarati|outdoor_hoarding|D2_distance": 4,
+        "gujarati|outdoor_hoarding|D2_lighting": 4,
+        "gujarati|outdoor_hoarding|D2_occlusion": 3,
+        "gujarati|outdoor_hoarding|D2_perspective": 3,
+        "gujarati|shopfront|D0_clean": 3,
+        "gujarati|shopfront|D2_blur": 3,
+        "gujarati|shopfront|D2_distance": 3,
+        "gujarati|shopfront|D2_lighting": 3,
+        "gujarati|shopfront|D2_occlusion": 3,
+        "gujarati|shopfront|D2_perspective": 3,
+        "hindi|outdoor_hoarding|D0_clean": 3,
+        "hindi|outdoor_hoarding|D2_blur": 4,
+        "hindi|outdoor_hoarding|D2_distance": 3,
+        "hindi|outdoor_hoarding|D2_lighting": 3,
+        "hindi|outdoor_hoarding|D2_occlusion": 3,
+        "hindi|outdoor_hoarding|D2_perspective": 3,
+        "hindi|shopfront|D0_clean": 3,
+        "hindi|shopfront|D2_blur": 3,
+        "hindi|shopfront|D2_distance": 3,
+        "hindi|shopfront|D2_lighting": 3,
+        "hindi|shopfront|D2_occlusion": 3,
+        "hindi|shopfront|D2_perspective": 3,
+        "marathi|outdoor_hoarding|D0_clean": 3,
+        "marathi|outdoor_hoarding|D2_blur": 3,
+        "marathi|outdoor_hoarding|D2_distance": 3,
+        "marathi|outdoor_hoarding|D2_lighting": 3,
+        "marathi|outdoor_hoarding|D2_occlusion": 3,
+        "marathi|outdoor_hoarding|D2_perspective": 4,
+        "marathi|shopfront|D0_clean": 3,
+        "marathi|shopfront|D2_blur": 3,
+        "marathi|shopfront|D2_distance": 3,
+        "marathi|shopfront|D2_lighting": 3,
+        "marathi|shopfront|D2_occlusion": 3,
+        "marathi|shopfront|D2_perspective": 3
+      },
+      "test": {
+        "bengali|outdoor_hoarding|D0_clean": 3,
+        "bengali|outdoor_hoarding|D2_blur": 3,
+        "bengali|outdoor_hoarding|D2_distance": 3,
+        "bengali|outdoor_hoarding|D2_lighting": 3,
+        "bengali|outdoor_hoarding|D2_occlusion": 3,
+        "bengali|outdoor_hoarding|D2_perspective": 3,
+        "bengali|shopfront|D0_clean": 3,
+        "bengali|shopfront|D2_blur": 3,
+        "bengali|shopfront|D2_distance": 3,
+        "bengali|shopfront|D2_lighting": 3,
+        "bengali|shopfront|D2_occlusion": 3,
+        "bengali|shopfront|D2_perspective": 3,
+        "gujarati|outdoor_hoarding|D0_clean": 3,
+        "gujarati|outdoor_hoarding|D2_blur": 3,
+        "gujarati|outdoor_hoarding|D2_distance": 3,
+        "gujarati|outdoor_hoarding|D2_lighting": 3,
+        "gujarati|outdoor_hoarding|D2_occlusion": 3,
+        "gujarati|outdoor_hoarding|D2_perspective": 3,
+        "gujarati|shopfront|D0_clean": 3,
+        "gujarati|shopfront|D2_blur": 4,
+        "gujarati|shopfront|D2_distance": 4,
+        "gujarati|shopfront|D2_lighting": 3,
+        "gujarati|shopfront|D2_occlusion": 3,
+        "gujarati|shopfront|D2_perspective": 3,
+        "hindi|outdoor_hoarding|D0_clean": 3,
+        "hindi|outdoor_hoarding|D2_blur": 3,
+        "hindi|outdoor_hoarding|D2_distance": 3,
+        "hindi|outdoor_hoarding|D2_lighting": 4,
+        "hindi|outdoor_hoarding|D2_occlusion": 3,
+        "hindi|outdoor_hoarding|D2_perspective": 3,
+        "hindi|shopfront|D0_clean": 3,
+        "hindi|shopfront|D2_blur": 3,
+        "hindi|shopfront|D2_distance": 3,
+        "hindi|shopfront|D2_lighting": 4,
+        "hindi|shopfront|D2_occlusion": 3,
+        "hindi|shopfront|D2_perspective": 3,
+        "marathi|outdoor_hoarding|D0_clean": 3,
+        "marathi|outdoor_hoarding|D2_blur": 3,
+        "marathi|outdoor_hoarding|D2_distance": 3,
+        "marathi|outdoor_hoarding|D2_lighting": 3,
+        "marathi|outdoor_hoarding|D2_occlusion": 3,
+        "marathi|outdoor_hoarding|D2_perspective": 3,
+        "marathi|shopfront|D0_clean": 3,
+        "marathi|shopfront|D2_blur": 4,
+        "marathi|shopfront|D2_distance": 3,
+        "marathi|shopfront|D2_lighting": 4,
+        "marathi|shopfront|D2_occlusion": 3,
+        "marathi|shopfront|D2_perspective": 3
+      }
+    }
+  },
+  "leakage_check": {
+    "exact_duplicate_image_count": 0,
+    "identity_group_count": 6,
+    "identity_group_size_distribution": {
+      "2": 5,
+      "3": 1
+    },
+    "method": "64-bit pHash candidate followed by 128x128 grayscale global SSIM",
+    "phash_max_hamming_distance": 2,
+    "ssim_minimum": 0.995,
+    "phash_candidate_pair_count": 5342,
+    "near_duplicate_pair_count": 8
+  }
+}

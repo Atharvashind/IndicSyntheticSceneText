@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "image_dir": "D:\\IndicSyntheticSceneText\\hf_upload\\indic-synthetic-scene-text-1000\\images\\D2_lighting",
+  "annotation_dir": "D:\\IndicSyntheticSceneText\\hf_upload\\indic-synthetic-scene-text-1000\\annotations\\D2_lighting",
+  "image_count": 167,
+  "annotation_count": 167,
+  "sample_id_count": 167,
+  "language_counts": {
+    "bengali": 41,
+    "gujarati": 42,
+    "hindi": 42,
+    "marathi": 42
+  },
+  "category_counts": {
+    "advertising_hoarding": 83,
+    "shop_board": 84
+  },
+  "background_source_counts": {},
+  "background_source_type_counts": {
+    "procedural_illustration": 167
+  },
+  "background_scene_category_counts": {},
+  "difficulty_profile_counts": {
+    "D2_lighting": 167
+  },
+  "font_counts": {
+    "noto-bengali-bold": 43,
+    "noto-bengali-regular": 47,
+    "noto-devanagari-bold": 83,
+    "noto-devanagari-regular": 104,
+    "noto-gujarati-bold": 40,
+    "noto-gujarati-regular": 48
+  },
+  "font_script_counts": {
+    "noto-bengali-bold|Bengali": 43,
+    "noto-bengali-regular|Bengali": 47,
+    "noto-devanagari-bold|Devanagari": 83,
+    "noto-devanagari-regular|Devanagari": 104,
+    "noto-gujarati-bold|Gujarati": 40,
+    "noto-gujarati-regular|Gujarati": 48
+  },
+  "passed": true,
+  "errors": []
+}

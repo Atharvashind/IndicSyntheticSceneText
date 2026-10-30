@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "passed": true,
+  "generated_scene_count": 1000,
+  "coverage": {
+    "language_counts": {
+      "bengali": 250,
+      "gujarati": 250,
+      "hindi": 250,
+      "marathi": 250
+    },
+    "scene_category_counts": {
+      "outdoor_hoarding": 500,
+      "shopfront": 500
+    },
+    "sign_category_counts": {
+      "advertising_hoarding": 500,
+      "shop_board": 500
+    },
+    "difficulty_profile_counts": {
+      "D0_clean": 167,
+      "D2_blur": 166,
+      "D2_distance": 167,
+      "D2_lighting": 167,
+      "D2_occlusion": 166,
+      "D2_perspective": 167
+    },
+    "font_counts": {
+      "noto-bengali-bold": 125,
+      "noto-bengali-regular": 125,
+      "noto-devanagari-bold": 250,
+      "noto-devanagari-regular": 250,
+      "noto-gujarati-bold": 125,
+      "noto-gujarati-regular": 125
+    },
+    "font_counts_by_language": {
+      "marathi": {
+        "noto-devanagari-bold": 125,
+        "noto-devanagari-regular": 125
+      },
+      "hindi": {
+        "noto-devanagari-bold": 125,
+        "noto-devanagari-regular": 125
+      },
+      "gujarati": {
+        "noto-gujarati-bold": 125,
+        "noto-gujarati-regular": 125
+      },
+      "bengali": {
+        "noto-bengali-bold": 125,
+        "noto-bengali-regular": 125
+      }
+    },
+    "background_source_counts": {
+      "procedural_illustration": 1000
+    }
+  },
+  "profiles": {
+    "D0_clean": {
+      "passed": true,
+      "image_count": 167,
+      "annotation_count": 167,
+      "errors": []
+    },
+    "D2_distance": {
+      "passed": true,
+      "image_count": 167,
+      "annotation_count": 167,
+      "errors": []
+    },
+    "D2_perspective": {
+      "passed": true,
+      "image_count": 167,
+      "annotation_count": 167,
+      "errors": []
+    },
+    "D2_lighting": {
+      "passed": true,
+      "image_count": 167,
+      "annotation_count": 167,
+      "errors": []
+    },
+    "D2_blur": {
+      "passed": true,
+      "image_count": 166,
+      "annotation_count": 166,
+      "errors": []
+    },
+    "D2_occlusion": {
+      "passed": true,
+      "image_count": 166,
+      "annotation_count": 166,
+      "errors": []
+    }
+  }
+}

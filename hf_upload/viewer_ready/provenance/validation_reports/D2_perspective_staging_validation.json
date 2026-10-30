@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "image_dir": "D:\\IndicSyntheticSceneText\\hf_upload\\indic-synthetic-scene-text-1000\\images\\D2_perspective",
+  "annotation_dir": "D:\\IndicSyntheticSceneText\\hf_upload\\indic-synthetic-scene-text-1000\\annotations\\D2_perspective",
+  "image_count": 167,
+  "annotation_count": 167,
+  "sample_id_count": 167,
+  "language_counts": {
+    "bengali": 42,
+    "gujarati": 41,
+    "hindi": 42,
+    "marathi": 42
+  },
+  "category_counts": {
+    "advertising_hoarding": 84,
+    "shop_board": 83
+  },
+  "background_source_counts": {},
+  "background_source_type_counts": {
+    "procedural_illustration": 167
+  },
+  "background_scene_category_counts": {},
+  "difficulty_profile_counts": {
+    "D2_perspective": 167
+  },
+  "font_counts": {
+    "noto-bengali-bold": 48,
+    "noto-bengali-regular": 48,
+    "noto-devanagari-bold": 95,
+    "noto-devanagari-regular": 93,
+    "noto-gujarati-bold": 50,
+    "noto-gujarati-regular": 40
+  },
+  "font_script_counts": {
+    "noto-bengali-bold|Bengali": 48,
+    "noto-bengali-regular|Bengali": 48,
+    "noto-devanagari-bold|Devanagari": 95,
+    "noto-devanagari-regular|Devanagari": 93,
+    "noto-gujarati-bold|Gujarati": 50,
+    "noto-gujarati-regular|Gujarati": 40
+  },
+  "passed": true,
+  "errors": []
+}

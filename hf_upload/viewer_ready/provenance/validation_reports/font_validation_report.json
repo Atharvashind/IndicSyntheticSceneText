@@ -1,0 +1,781 @@
+{
+  "schema_version": "1.0",
+  "rendering_engine": "HarfBuzz + FreeType",
+  "font_candidate_count": 9,
+  "eligible_font_ids": [
+    "noto-devanagari-regular",
+    "noto-devanagari-bold",
+    "noto-gujarati-regular",
+    "noto-gujarati-bold",
+    "noto-bengali-regular",
+    "noto-bengali-bold"
+  ],
+  "passed_font_count": 6,
+  "failed_or_unlicensed_font_ids": [
+    "local-annapurna-bold-unverified",
+    "local-chandra-head-unverified",
+    "local-kirati-unverified"
+  ],
+  "fonts": [
+    {
+      "id": "noto-devanagari-regular",
+      "path": "assets/fonts/devanagari/NotoSansDevanagari-Regular.ttf",
+      "family": "Noto Sans Devanagari",
+      "weight": 400,
+      "style": "Regular",
+      "license": "SIL Open Font License 1.1",
+      "license_status": "verified",
+      "license_file": "assets/fonts/devanagari/OFL.txt",
+      "provenance": "Local Google Fonts Noto Sans Devanagari archive; matching OFL text is stored beside the font.",
+      "target_languages": [
+        "marathi",
+        "hindi"
+      ],
+      "supported_scripts": [
+        "Devanagari"
+      ],
+      "language_validation": [
+        {
+          "language": "marathi",
+          "script": "Deva",
+          "shaping_language": "mr",
+          "exact_transcription_preserved": true,
+          "missing_codepoints": [],
+          "missing_glyph_box_detected": false,
+          "clipping_check_passed": true,
+          "feature_probes": {
+            "vowel_signs": true,
+            "combining_marks": true,
+            "conjuncts": true,
+            "punctuation": true,
+            "numerals": true,
+            "multiline": true
+          },
+          "passed": true,
+          "error": null,
+          "ink_bbox": {
+            "x_min": 20,
+            "y_min": 77,
+            "x_max": 351,
+            "y_max": 367
+          },
+          "image": "images/noto-devanagari-regular__marathi.png"
+        },
+        {
+          "language": "hindi",
+          "script": "Deva",
+          "shaping_language": "hi",
+          "exact_transcription_preserved": true,
+          "missing_codepoints": [],
+          "missing_glyph_box_detected": false,
+          "clipping_check_passed": true,
+          "feature_probes": {
+            "vowel_signs": true,
+            "combining_marks": true,
+            "conjuncts": true,
+            "punctuation": true,
+            "numerals": true,
+            "multiline": true
+          },
+          "passed": true,
+          "error": null,
+          "ink_bbox": {
+            "x_min": 20,
+            "y_min": 77,
+            "x_max": 352,
+            "y_max": 367
+          },
+          "image": "images/noto-devanagari-regular__hindi.png"
+        }
+      ],
+      "eligible_for_generation": true,
+      "font_file_exists": true,
+      "error": null,
+      "glyph_count": 1090,
+      "unicode_script_coverage": {
+        "Devanagari": 128,
+        "Gujarati": 0,
+        "Bengali": 0
+      }
+    },
+    {
+      "id": "noto-devanagari-bold",
+      "path": "assets/fonts/devanagari/NotoSansDevanagari-Bold.ttf",
+      "family": "Noto Sans Devanagari",
+      "weight": 700,
+      "style": "Bold",
+      "license": "SIL Open Font License 1.1",
+      "license_status": "verified",
+      "license_file": "assets/fonts/devanagari/OFL.txt",
+      "provenance": "Static Bold file extracted from the locally stored Google Fonts Noto Sans Devanagari archive; matching OFL text is stored beside the font.",
+      "target_languages": [
+        "marathi",
+        "hindi"
+      ],
+      "supported_scripts": [
+        "Devanagari"
+      ],
+      "language_validation": [
+        {
+          "language": "marathi",
+          "script": "Deva",
+          "shaping_language": "mr",
+          "exact_transcription_preserved": true,
+          "missing_codepoints": [],
+          "missing_glyph_box_detected": false,
+          "clipping_check_passed": true,
+          "feature_probes": {
+            "vowel_signs": true,
+            "combining_marks": true,
+            "conjuncts": true,
+            "punctuation": true,
+            "numerals": true,
+            "multiline": true
+          },
+          "passed": true,
+          "error": null,
+          "ink_bbox": {
+            "x_min": 20,
+            "y_min": 77,
+            "x_max": 383,
+            "y_max": 367
+          },
+          "image": "images/noto-devanagari-bold__marathi.png"
+        },
+        {
+          "language": "hindi",
+          "script": "Deva",
+          "shaping_language": "hi",
+          "exact_transcription_preserved": true,
+          "missing_codepoints": [],
+          "missing_glyph_box_detected": false,
+          "clipping_check_passed": true,
+          "feature_probes": {
+            "vowel_signs": true,
+            "combining_marks": true,
+            "conjuncts": true,
+            "punctuation": true,
+            "numerals": true,
+            "multiline": true
+          },
+          "passed": true,
+          "error": null,
+          "ink_bbox": {
+            "x_min": 20,
+            "y_min": 77,
+            "x_max": 383,
+            "y_max": 367
+          },
+          "image": "images/noto-devanagari-bold__hindi.png"
+        }
+      ],
+      "eligible_for_generation": true,
+      "font_file_exists": true,
+      "error": null,
+      "glyph_count": 1090,
+      "unicode_script_coverage": {
+        "Devanagari": 128,
+        "Gujarati": 0,
+        "Bengali": 0
+      }
+    },
+    {
+      "id": "noto-gujarati-regular",
+      "path": "assets/fonts/gujarati/NotoSansGujarati-Regular.ttf",
+      "family": "Noto Sans Gujarati",
+      "weight": 400,
+      "style": "Regular",
+      "license": "SIL Open Font License 1.1",
+      "license_status": "verified",
+      "license_file": "assets/fonts/gujarati/OFL.txt",
+      "provenance": "Local Google Fonts Noto Sans Gujarati archive; matching OFL text is stored beside the font.",
+      "target_languages": [
+        "gujarati"
+      ],
+      "supported_scripts": [
+        "Gujarati"
+      ],
+      "language_validation": [
+        {
+          "language": "gujarati",
+          "script": "Gujr",
+          "shaping_language": "gu",
+          "exact_transcription_preserved": true,
+          "missing_codepoints": [],
+          "missing_glyph_box_detected": false,
+          "clipping_check_passed": true,
+          "feature_probes": {
+            "vowel_signs": true,
+            "combining_marks": true,
+            "conjuncts": true,
+            "punctuation": true,
+            "numerals": true,
+            "multiline": true
+          },
+          "passed": true,
+          "error": null,
+          "ink_bbox": {
+            "x_min": 21,
+            "y_min": 77,
+            "x_max": 346,
+            "y_max": 365
+          },
+          "image": "images/noto-gujarati-regular__gujarati.png"
+        }
+      ],
+      "eligible_for_generation": true,
+      "font_file_exists": true,
+      "error": null,
+      "glyph_count": 1076,
+      "unicode_script_coverage": {
+        "Devanagari": 4,
+        "Gujarati": 91,
+        "Bengali": 0
+      }
+    },
+    {
+      "id": "noto-gujarati-bold",
+      "path": "assets/fonts/gujarati/NotoSansGujarati-Bold.ttf",
+      "family": "Noto Sans Gujarati",
+      "weight": 700,
+      "style": "Bold",
+      "license": "SIL Open Font License 1.1",
+      "license_status": "verified",
+      "license_file": "assets/fonts/gujarati/OFL.txt",
+      "provenance": "Static Bold file extracted from the locally stored Google Fonts Noto Sans Gujarati archive; matching OFL text is stored beside the font.",
+      "target_languages": [
+        "gujarati"
+      ],
+      "supported_scripts": [
+        "Gujarati"
+      ],
+      "language_validation": [
+        {
+          "language": "gujarati",
+          "script": "Gujr",
+          "shaping_language": "gu",
+          "exact_transcription_preserved": true,
+          "missing_codepoints": [],
+          "missing_glyph_box_detected": false,
+          "clipping_check_passed": true,
+          "feature_probes": {
+            "vowel_signs": true,
+            "combining_marks": true,
+            "conjuncts": true,
+            "punctuation": true,
+            "numerals": true,
+            "multiline": true
+          },
+          "passed": true,
+          "error": null,
+          "ink_bbox": {
+            "x_min": 21,
+            "y_min": 77,
+            "x_max": 357,
+            "y_max": 367
+          },
+          "image": "images/noto-gujarati-bold__gujarati.png"
+        }
+      ],
+      "eligible_for_generation": true,
+      "font_file_exists": true,
+      "error": null,
+      "glyph_count": 1076,
+      "unicode_script_coverage": {
+        "Devanagari": 4,
+        "Gujarati": 91,
+        "Bengali": 0
+      }
+    },
+    {
+      "id": "noto-bengali-regular",
+      "path": "assets/fonts/bengali/NotoSansBengali-Regular.ttf",
+      "family": "Noto Sans Bengali",
+      "weight": 400,
+      "style": "Regular",
+      "license": "SIL Open Font License 1.1",
+      "license_status": "verified",
+      "license_file": "assets/fonts/bengali/OFL.txt",
+      "provenance": "Local Google Fonts Noto Sans Bengali archive; matching OFL text is stored beside the font.",
+      "target_languages": [
+        "bengali"
+      ],
+      "supported_scripts": [
+        "Bengali"
+      ],
+      "language_validation": [
+        {
+          "language": "bengali",
+          "script": "Beng",
+          "shaping_language": "bn",
+          "exact_transcription_preserved": true,
+          "missing_codepoints": [],
+          "missing_glyph_box_detected": false,
+          "clipping_check_passed": true,
+          "feature_probes": {
+            "vowel_signs": true,
+            "combining_marks": true,
+            "conjuncts": true,
+            "punctuation": true,
+            "numerals": true,
+            "multiline": true
+          },
+          "passed": true,
+          "error": null,
+          "ink_bbox": {
+            "x_min": 19,
+            "y_min": 85,
+            "x_max": 368,
+            "y_max": 366
+          },
+          "image": "images/noto-bengali-regular__bengali.png"
+        }
+      ],
+      "eligible_for_generation": true,
+      "font_file_exists": true,
+      "error": null,
+      "glyph_count": 729,
+      "unicode_script_coverage": {
+        "Devanagari": 4,
+        "Gujarati": 0,
+        "Bengali": 96
+      }
+    },
+    {
+      "id": "noto-bengali-bold",
+      "path": "assets/fonts/bengali/NotoSansBengali-Bold.ttf",
+      "family": "Noto Sans Bengali",
+      "weight": 700,
+      "style": "Bold",
+      "license": "SIL Open Font License 1.1",
+      "license_status": "verified",
+      "license_file": "assets/fonts/bengali/OFL.txt",
+      "provenance": "Static Bold file extracted from the locally stored Google Fonts Noto Sans Bengali archive; matching OFL text is stored beside the font.",
+      "target_languages": [
+        "bengali"
+      ],
+      "supported_scripts": [
+        "Bengali"
+      ],
+      "language_validation": [
+        {
+          "language": "bengali",
+          "script": "Beng",
+          "shaping_language": "bn",
+          "exact_transcription_preserved": true,
+          "missing_codepoints": [],
+          "missing_glyph_box_detected": false,
+          "clipping_check_passed": true,
+          "feature_probes": {
+            "vowel_signs": true,
+            "combining_marks": true,
+            "conjuncts": true,
+            "punctuation": true,
+            "numerals": true,
+            "multiline": true
+          },
+          "passed": true,
+          "error": null,
+          "ink_bbox": {
+            "x_min": 19,
+            "y_min": 85,
+            "x_max": 379,
+            "y_max": 366
+          },
+          "image": "images/noto-bengali-bold__bengali.png"
+        }
+      ],
+      "eligible_for_generation": true,
+      "font_file_exists": true,
+      "error": null,
+      "glyph_count": 729,
+      "unicode_script_coverage": {
+        "Devanagari": 4,
+        "Gujarati": 0,
+        "Bengali": 96
+      }
+    },
+    {
+      "id": "local-annapurna-bold-unverified",
+      "path": "assets/fonts/devanagari/Annapurna Bold.ttf",
+      "family": "Annapurna",
+      "weight": 700,
+      "style": "Bold",
+      "license": "Unknown",
+      "license_status": "unverified",
+      "license_file": null,
+      "provenance": "User-provided local file; source and redistribution terms have not been verified.",
+      "target_languages": [
+        "marathi",
+        "hindi"
+      ],
+      "supported_scripts": [],
+      "language_validation": [
+        {
+          "language": "marathi",
+          "script": "Deva",
+          "shaping_language": "mr",
+          "exact_transcription_preserved": false,
+          "missing_codepoints": [
+            "\\IndicSyntheticSceneText\\assets\\fonts\\devanagari\\Annapurna Bold.ttf' does not cover required characters: U+0902 (ं)",
+            "U+0915 (क)",
+            "U+091C (ज)",
+            "U+091E (ञ)",
+            "U+0920 (ठ)",
+            "U+0923 (ण)",
+            "U+0924 (त)",
+            "U+0928 (न)",
+            "U+092E (म)",
+            "U+0930 (र)",
+            "U+0937 (ष)",
+            "U+0938 (स)",
+            "U+093E (ा)",
+            "U+093F (ि)",
+            "U+0940 (ी)",
+            "U+0947 (े)",
+            "U+094B (ो)",
+            "U+094D (्)",
+            "U+0966 (०)",
+            "U+0967 (१)",
+            "U+0968 (२)",
+            "U+0969 (३)",
+            "U+096A (४)",
+            "U+096B (५)",
+            "U+096C (६)",
+            "U+096D (७)",
+            "U+096E (८)",
+            "U+096F (९)",
+            "U+20B9 (₹)"
+          ],
+          "missing_glyph_box_detected": false,
+          "clipping_check_passed": false,
+          "feature_probes": {
+            "vowel_signs": true,
+            "combining_marks": true,
+            "conjuncts": true,
+            "punctuation": true,
+            "numerals": true,
+            "multiline": true
+          },
+          "passed": false,
+          "error": "Font 'D:\\IndicSyntheticSceneText\\assets\\fonts\\devanagari\\Annapurna Bold.ttf' does not cover required characters: U+0902 (ं), U+0915 (क), U+091C (ज), U+091E (ञ), U+0920 (ठ), U+0923 (ण), U+0924 (त), U+0928 (न), U+092E (म), U+0930 (र), U+0937 (ष), U+0938 (स), U+093E (ा), U+093F (ि), U+0940 (ी), U+0947 (े), U+094B (ो), U+094D (्), U+0966 (०), U+0967 (१), U+0968 (२), U+0969 (३), U+096A (४), U+096B (५), U+096C (६), U+096D (७), U+096E (८), U+096F (९), U+20B9 (₹)"
+        },
+        {
+          "language": "hindi",
+          "script": "Deva",
+          "shaping_language": "hi",
+          "exact_transcription_preserved": false,
+          "missing_codepoints": [
+            "\\IndicSyntheticSceneText\\assets\\fonts\\devanagari\\Annapurna Bold.ttf' does not cover required characters: U+0915 (क)",
+            "U+091C (ज)",
+            "U+091E (ञ)",
+            "U+0923 (ण)",
+            "U+0924 (त)",
+            "U+0928 (न)",
+            "U+092A (प)",
+            "U+092D (भ)",
+            "U+092E (म)",
+            "U+092F (य)",
+            "U+0930 (र)",
+            "U+0937 (ष)",
+            "U+0938 (स)",
+            "U+093E (ा)",
+            "U+093F (ि)",
+            "U+0940 (ी)",
+            "U+0943 (ृ)",
+            "U+0947 (े)",
+            "U+094B (ो)",
+            "U+094D (्)",
+            "U+0966 (०)",
+            "U+0967 (१)",
+            "U+0968 (२)",
+            "U+0969 (३)",
+            "U+096A (४)",
+            "U+096B (५)",
+            "U+096C (६)",
+            "U+096D (७)",
+            "U+096E (८)",
+            "U+096F (९)",
+            "U+20B9 (₹)"
+          ],
+          "missing_glyph_box_detected": false,
+          "clipping_check_passed": false,
+          "feature_probes": {
+            "vowel_signs": true,
+            "combining_marks": true,
+            "conjuncts": true,
+            "punctuation": true,
+            "numerals": true,
+            "multiline": true
+          },
+          "passed": false,
+          "error": "Font 'D:\\IndicSyntheticSceneText\\assets\\fonts\\devanagari\\Annapurna Bold.ttf' does not cover required characters: U+0915 (क), U+091C (ज), U+091E (ञ), U+0923 (ण), U+0924 (त), U+0928 (न), U+092A (प), U+092D (भ), U+092E (म), U+092F (य), U+0930 (र), U+0937 (ष), U+0938 (स), U+093E (ा), U+093F (ि), U+0940 (ी), U+0943 (ृ), U+0947 (े), U+094B (ो), U+094D (्), U+0966 (०), U+0967 (१), U+0968 (२), U+0969 (३), U+096A (४), U+096B (५), U+096C (६), U+096D (७), U+096E (८), U+096F (९), U+20B9 (₹)"
+        }
+      ],
+      "eligible_for_generation": false,
+      "font_file_exists": true,
+      "error": "One or more configured language/script rendering checks failed.",
+      "glyph_count": 151,
+      "unicode_script_coverage": {
+        "Devanagari": 0,
+        "Gujarati": 0,
+        "Bengali": 0
+      }
+    },
+    {
+      "id": "local-chandra-head-unverified",
+      "path": "assets/fonts/devanagari/Chandra Head Regular.ttf",
+      "family": "Chandra Head",
+      "weight": 400,
+      "style": "Regular",
+      "license": "Unknown",
+      "license_status": "unverified",
+      "license_file": null,
+      "provenance": "User-provided local file; source and redistribution terms have not been verified.",
+      "target_languages": [
+        "marathi",
+        "hindi"
+      ],
+      "supported_scripts": [],
+      "language_validation": [
+        {
+          "language": "marathi",
+          "script": "Deva",
+          "shaping_language": "mr",
+          "exact_transcription_preserved": false,
+          "missing_codepoints": [
+            "\\IndicSyntheticSceneText\\assets\\fonts\\devanagari\\Chandra Head Regular.ttf' does not cover required characters: U+0902 (ं)",
+            "U+0915 (क)",
+            "U+091C (ज)",
+            "U+091E (ञ)",
+            "U+0920 (ठ)",
+            "U+0923 (ण)",
+            "U+0924 (त)",
+            "U+0928 (न)",
+            "U+092E (म)",
+            "U+0930 (र)",
+            "U+0937 (ष)",
+            "U+0938 (स)",
+            "U+093E (ा)",
+            "U+093F (ि)",
+            "U+0940 (ी)",
+            "U+0947 (े)",
+            "U+094B (ो)",
+            "U+094D (्)",
+            "U+0966 (०)",
+            "U+0967 (१)",
+            "U+0968 (२)",
+            "U+0969 (३)",
+            "U+096A (४)",
+            "U+096B (५)",
+            "U+096C (६)",
+            "U+096D (७)",
+            "U+096E (८)",
+            "U+096F (९)",
+            "U+20B9 (₹)"
+          ],
+          "missing_glyph_box_detected": false,
+          "clipping_check_passed": false,
+          "feature_probes": {
+            "vowel_signs": true,
+            "combining_marks": true,
+            "conjuncts": true,
+            "punctuation": true,
+            "numerals": true,
+            "multiline": true
+          },
+          "passed": false,
+          "error": "Font 'D:\\IndicSyntheticSceneText\\assets\\fonts\\devanagari\\Chandra Head Regular.ttf' does not cover required characters: U+0902 (ं), U+0915 (क), U+091C (ज), U+091E (ञ), U+0920 (ठ), U+0923 (ण), U+0924 (त), U+0928 (न), U+092E (म), U+0930 (र), U+0937 (ष), U+0938 (स), U+093E (ा), U+093F (ि), U+0940 (ी), U+0947 (े), U+094B (ो), U+094D (्), U+0966 (०), U+0967 (१), U+0968 (२), U+0969 (३), U+096A (४), U+096B (५), U+096C (६), U+096D (७), U+096E (८), U+096F (९), U+20B9 (₹)"
+        },
+        {
+          "language": "hindi",
+          "script": "Deva",
+          "shaping_language": "hi",
+          "exact_transcription_preserved": false,
+          "missing_codepoints": [
+            "\\IndicSyntheticSceneText\\assets\\fonts\\devanagari\\Chandra Head Regular.ttf' does not cover required characters: U+0915 (क)",
+            "U+091C (ज)",
+            "U+091E (ञ)",
+            "U+0923 (ण)",
+            "U+0924 (त)",
+            "U+0928 (न)",
+            "U+092A (प)",
+            "U+092D (भ)",
+            "U+092E (म)",
+            "U+092F (य)",
+            "U+0930 (र)",
+            "U+0937 (ष)",
+            "U+0938 (स)",
+            "U+093E (ा)",
+            "U+093F (ि)",
+            "U+0940 (ी)",
+            "U+0943 (ृ)",
+            "U+0947 (े)",
+            "U+094B (ो)",
+            "U+094D (्)",
+            "U+0966 (०)",
+            "U+0967 (१)",
+            "U+0968 (२)",
+            "U+0969 (३)",
+            "U+096A (४)",
+            "U+096B (५)",
+            "U+096C (६)",
+            "U+096D (७)",
+            "U+096E (८)",
+            "U+096F (९)",
+            "U+20B9 (₹)"
+          ],
+          "missing_glyph_box_detected": false,
+          "clipping_check_passed": false,
+          "feature_probes": {
+            "vowel_signs": true,
+            "combining_marks": true,
+            "conjuncts": true,
+            "punctuation": true,
+            "numerals": true,
+            "multiline": true
+          },
+          "passed": false,
+          "error": "Font 'D:\\IndicSyntheticSceneText\\assets\\fonts\\devanagari\\Chandra Head Regular.ttf' does not cover required characters: U+0915 (क), U+091C (ज), U+091E (ञ), U+0923 (ण), U+0924 (त), U+0928 (न), U+092A (प), U+092D (भ), U+092E (म), U+092F (य), U+0930 (र), U+0937 (ष), U+0938 (स), U+093E (ा), U+093F (ि), U+0940 (ी), U+0943 (ृ), U+0947 (े), U+094B (ो), U+094D (्), U+0966 (०), U+0967 (१), U+0968 (२), U+0969 (३), U+096A (४), U+096B (५), U+096C (६), U+096D (७), U+096E (८), U+096F (९), U+20B9 (₹)"
+        }
+      ],
+      "eligible_for_generation": false,
+      "font_file_exists": true,
+      "error": "One or more configured language/script rendering checks failed.",
+      "glyph_count": 161,
+      "unicode_script_coverage": {
+        "Devanagari": 0,
+        "Gujarati": 0,
+        "Bengali": 0
+      }
+    },
+    {
+      "id": "local-kirati-unverified",
+      "path": "assets/fonts/devanagari/Kirati Regular.ttf",
+      "family": "Kirati",
+      "weight": 400,
+      "style": "Regular",
+      "license": "Unknown",
+      "license_status": "unverified",
+      "license_file": null,
+      "provenance": "User-provided local file; source and redistribution terms have not been verified.",
+      "target_languages": [
+        "marathi",
+        "hindi"
+      ],
+      "supported_scripts": [],
+      "language_validation": [
+        {
+          "language": "marathi",
+          "script": "Deva",
+          "shaping_language": "mr",
+          "exact_transcription_preserved": false,
+          "missing_codepoints": [
+            "\\IndicSyntheticSceneText\\assets\\fonts\\devanagari\\Kirati Regular.ttf' does not cover required characters: U+0902 (ं)",
+            "U+0915 (क)",
+            "U+091C (ज)",
+            "U+091E (ञ)",
+            "U+0920 (ठ)",
+            "U+0923 (ण)",
+            "U+0924 (त)",
+            "U+0928 (न)",
+            "U+092E (म)",
+            "U+0930 (र)",
+            "U+0937 (ष)",
+            "U+0938 (स)",
+            "U+093E (ा)",
+            "U+093F (ि)",
+            "U+0940 (ी)",
+            "U+0947 (े)",
+            "U+094B (ो)",
+            "U+094D (्)",
+            "U+0966 (०)",
+            "U+0967 (१)",
+            "U+0968 (२)",
+            "U+0969 (३)",
+            "U+096A (४)",
+            "U+096B (५)",
+            "U+096C (६)",
+            "U+096D (७)",
+            "U+096E (८)",
+            "U+096F (९)",
+            "U+20B9 (₹)"
+          ],
+          "missing_glyph_box_detected": false,
+          "clipping_check_passed": false,
+          "feature_probes": {
+            "vowel_signs": true,
+            "combining_marks": true,
+            "conjuncts": true,
+            "punctuation": true,
+            "numerals": true,
+            "multiline": true
+          },
+          "passed": false,
+          "error": "Font 'D:\\IndicSyntheticSceneText\\assets\\fonts\\devanagari\\Kirati Regular.ttf' does not cover required characters: U+0902 (ं), U+0915 (क), U+091C (ज), U+091E (ञ), U+0920 (ठ), U+0923 (ण), U+0924 (त), U+0928 (न), U+092E (म), U+0930 (र), U+0937 (ष), U+0938 (स), U+093E (ा), U+093F (ि), U+0940 (ी), U+0947 (े), U+094B (ो), U+094D (्), U+0966 (०), U+0967 (१), U+0968 (२), U+0969 (३), U+096A (४), U+096B (५), U+096C (६), U+096D (७), U+096E (८), U+096F (९), U+20B9 (₹)"
+        },
+        {
+          "language": "hindi",
+          "script": "Deva",
+          "shaping_language": "hi",
+          "exact_transcription_preserved": false,
+          "missing_codepoints": [
+            "\\IndicSyntheticSceneText\\assets\\fonts\\devanagari\\Kirati Regular.ttf' does not cover required characters: U+0915 (क)",
+            "U+091C (ज)",
+            "U+091E (ञ)",
+            "U+0923 (ण)",
+            "U+0924 (त)",
+            "U+0928 (न)",
+            "U+092A (प)",
+            "U+092D (भ)",
+            "U+092E (म)",
+            "U+092F (य)",
+            "U+0930 (र)",
+            "U+0937 (ष)",
+            "U+0938 (स)",
+            "U+093E (ा)",
+            "U+093F (ि)",
+            "U+0940 (ी)",
+            "U+0943 (ृ)",
+            "U+0947 (े)",
+            "U+094B (ो)",
+            "U+094D (्)",
+            "U+0966 (०)",
+            "U+0967 (१)",
+            "U+0968 (२)",
+            "U+0969 (३)",
+            "U+096A (४)",
+            "U+096B (५)",
+            "U+096C (६)",
+            "U+096D (७)",
+            "U+096E (८)",
+            "U+096F (९)",
+            "U+20B9 (₹)"
+          ],
+          "missing_glyph_box_detected": false,
+          "clipping_check_passed": false,
+          "feature_probes": {
+            "vowel_signs": true,
+            "combining_marks": true,
+            "conjuncts": true,
+            "punctuation": true,
+            "numerals": true,
+            "multiline": true
+          },
+          "passed": false,
+          "error": "Font 'D:\\IndicSyntheticSceneText\\assets\\fonts\\devanagari\\Kirati Regular.ttf' does not cover required characters: U+0915 (क), U+091C (ज), U+091E (ञ), U+0923 (ण), U+0924 (त), U+0928 (न), U+092A (प), U+092D (भ), U+092E (म), U+092F (य), U+0930 (र), U+0937 (ष), U+0938 (स), U+093E (ा), U+093F (ि), U+0940 (ी), U+0943 (ृ), U+0947 (े), U+094B (ो), U+094D (्), U+0966 (०), U+0967 (१), U+0968 (२), U+0969 (३), U+096A (४), U+096B (५), U+096C (६), U+096D (७), U+096E (८), U+096F (९), U+20B9 (₹)"
+        }
+      ],
+      "eligible_for_generation": false,
+      "font_file_exists": true,
+      "error": "One or more configured language/script rendering checks failed.",
+      "glyph_count": 114,
+      "unicode_script_coverage": {
+        "Devanagari": 0,
+        "Gujarati": 0,
+        "Bengali": 0
+      }
+    }
+  ],
+  "diagnostic_contact_sheet": "font_diagnostic_contact_sheet.png"
+}
